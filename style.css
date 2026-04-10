@@ -487,6 +487,10 @@ sup a:hover {
     top: .5rem;
     right: .5rem
   }
+
+  .timeline-item::before {
+    left: -2rem;
+  }
 }
 
 @keyframes fadeUp {
