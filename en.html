@@ -1,590 +1,353 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>To the Junior Dev Generation - April 2026</title>
-        <meta
-            name="description"
-            content="The junior pipeline is being severed, and this will likely create a talent crisis in 3-5 years - meaning opportunity for those who stay the course."
-        />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyen Anh Tuong — Senior Frontend Engineer</title>
+    <meta name="description" content="Portfolio of Nguyen Anh Tuong — Senior Frontend Engineer with 8+ years building scalable web apps across gaming, healthcare & enterprise.">
 
-        <!-- Canonical & Hreflang -->
-        <link rel="canonical" href="https://tuongna.github.io/en.html" />
-        <link rel="alternate" hreflang="vi" href="https://tuongna.github.io/" />
-        <link
-            rel="alternate"
-            hreflang="en"
-            href="https://tuongna.github.io/en.html"
-        />
-        <link
-            rel="alternate"
-            hreflang="ko"
-            href="https://tuongna.github.io/ko.html"
-        />
-        <link
-            rel="alternate"
-            hreflang="x-default"
-            href="https://tuongna.github.io/"
-        />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nguyen Anh Tuong — Senior Frontend Engineer">
+    <meta property="og:description" content="Senior Frontend Engineer with 8+ years building scalable, component-driven web applications.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tuongna.github.io/en.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://tuongna.github.io/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
 
-        <!-- Open Graph -->
-        <meta
-            property="og:title"
-            content="To the Junior Dev Generation: Don't Give Up - Your Time Is Coming"
-        />
-        <meta
-            property="og:description"
-            content="The junior pipeline is being severed. This will likely create a talent crisis in 3-5 years."
-        />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://tuongna.github.io/en.html" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:locale:alternate" content="vi_VN" />
-        <meta property="og:locale:alternate" content="ko_KR" />
-        <meta
-            property="article:published_time"
-            content="2026-04-01T00:00:00+07:00"
-        />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nguyen Anh Tuong — Senior Frontend Engineer">
+    <meta name="twitter:description" content="Senior Frontend Engineer with 8+ years building scalable, component-driven web applications.">
+    <meta name="twitter:image" content="https://tuongna.github.io/og-image.png">
 
-        <!-- Twitter Card -->
-        <meta name="twitter:card" content="summary" />
-        <meta
-            name="twitter:title"
-            content="To the Junior Dev Generation: Don't Give Up"
-        />
-        <meta
-            name="twitter:description"
-            content="The junior pipeline is being severed. An open letter to junior developers."
-        />
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="vi" href="https://tuongna.github.io/">
+    <link rel="alternate" hreflang="en" href="https://tuongna.github.io/en.html">
+    <link rel="alternate" hreflang="ko" href="https://tuongna.github.io/ko.html">
+    <link rel="alternate" hreflang="x-default" href="https://tuongna.github.io/">
+    <link rel="canonical" href="https://tuongna.github.io/en.html">
 
-        <!-- Structured Data -->
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Article",
-                "headline": "To the Junior Dev Generation: Don't Give Up - Your Time Is Coming",
-                "description": "The junior pipeline is being severed, and this will likely create a talent crisis in 3-5 years.",
-                "datePublished": "2026-04-01",
-                "inLanguage": "en",
-                "author": {
-                    "@type": "Person",
-                    "name": "Nguyễn Anh Tường"
-                },
-                "mainEntityOfPage": {
-                    "@type": "WebPage",
-                    "@id": "https://tuongna.github.io/en.html"
-                }
-            }
-        </script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Nguyen Anh Tuong",
+        "alternateName": "Nguyễn Anh Tường",
+        "jobTitle": "Senior Frontend Engineer",
+        "url": "https://tuongna.github.io/",
+        "sameAs": [
+          "https://github.com/tuongna",
+          "https://linkedin.com/in/tuongna"
+        ],
+        "email": "natuong2017@gmail.com",
+        "knowsAbout": ["Vue 3", "React", "TypeScript", "Design System", "AI Integration"],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Smilegate Vietnam"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ho Chi Minh City",
+          "addressCountry": "VN"
+        }
+      }
+    }
+    </script>
 
-    <body>
-        <nav class="lang-switcher" aria-label="Language">
-            <a class="lang-btn" href="./">VI</a>
-            <a class="lang-btn active" href="en.html">EN</a>
-            <a class="lang-btn" href="ko.html">KO</a>
-        </nav>
-        <a class="skip-link" href="#main-content">Skip to content</a>
+    <!-- Fonts from Figma Design -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@700&family=Jost:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="page-wrapper">
 
-        <header class="masthead">
-            <div class="masthead-label">Open Letter</div>
-            <div class="masthead-date">April · 2026 · Saigon</div>
-        </header>
-        <main id="main-content">
-            <section class="hero">
-                <h1>
-                    To the Junior Dev Generation:<br />Don't Give Up -<br /><em
-                        >Your Time Is Coming</em
-                    >
-                </h1>
-                <p class="hero-sub">
-                    Everyone says AI will replace you. The data says otherwise.
-                    Here's why in 2-3 years, you'll likely be the ones in
-                    demand.
-                </p>
+        <!-- ===== SIDEBAR ===== -->
+        <aside class="sidebar" id="sidebar">
+            <div>
+                <a href="./" class="sidebar__logo" aria-label="Home - Nguyen Anh Tuong">NA</a>
+            </div>
+
+            <div>
+                <hr class="sidebar__nav-separator">
+                <nav class="sidebar__nav" aria-label="Main Navigation">
+                    <a href="#home" class="sidebar__nav-link active">Home</a>
+                    <a href="#about" class="sidebar__nav-link">About</a>
+                    <a href="#skills" class="sidebar__nav-link">Skills</a>
+                    <a href="#writing" class="sidebar__nav-link">Blog</a>
+                    <a href="#contact" class="sidebar__nav-link">Contact</a>
+                </nav>
+            </div>
+
+            <div class="sidebar__bottom">
+                <div class="sidebar__socials">
+                    <a href="https://github.com/tuongna" target="_blank" rel="noopener" class="sidebar__social-icon" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/tuongna" target="_blank" rel="noopener" class="sidebar__social-icon" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="mailto:natuong2017@gmail.com" class="sidebar__social-icon" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                </div>
+
+                <nav class="sidebar__lang" aria-label="Language">
+                    <a class="lang-btn" href="./">VI</a>
+                    <a class="lang-btn active" href="en.html">EN</a>
+                    <a class="lang-btn" href="ko.html">KO</a>
+                </nav>
+
+                <p class="sidebar__copyright">© 2026 Nguyen Anh Tuong</p>
+            </div>
+        </aside>
+
+        <!-- Mobile toggle -->
+        <button class="sidebar__toggle" onclick="document.getElementById('sidebar').classList.toggle('open')" aria-label="Toggle menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+
+        <!-- ===== MAIN CONTENT ===== -->
+        <main class="main-content">
+
+            <!-- HERO -->
+            <section class="hero" id="home">
+                <div class="hero__content">
+                    <p class="hero__greeting fade-in">Senior Frontend Engineer — Vietnam</p>
+                    <h1 class="hero__name fade-in delay-1">Nguyen<br>Anh<br>Tuong</h1>
+
+                    <div class="hero__cta-row fade-in delay-2">
+                        <a href="#contact" class="btn btn--dark">
+                            <span>Let's talk with me</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="hero__contact-info fade-in delay-3" style="margin-top: 64px;">
+                        <div class="hero__contact-item">
+                            <div class="hero__contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <span class="hero__contact-text">+84 34 944 6739</span>
+                        </div>
+                        <div class="hero__contact-item">
+                            <div class="hero__contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <span class="hero__contact-text">natuong2017@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__decoration">
+                    <div class="hero__gradient-blob hero__gradient-blob--1"></div>
+                    <div class="hero__gradient-blob hero__gradient-blob--2"></div>
+                </div>
             </section>
-            <hr class="divider" />
-            <article class="content">
-                <p class="opening">
-                    If you're a junior developer reading this, you're probably
-                    feeling suffocated. Headlines scream that AI will replace
-                    programmers. Every company demands "3 years of experience"
-                    for entry-level roles. You send dozens of résumés and hear
-                    nothing back. I understand that feeling. But I want you to
-                    stop, breathe, and look at the bigger picture. This article
-                    uses data from BLS, IEA, Nature, and industry reports to
-                    argue a thesis that goes against the prevailing narrative:
-                    <strong
-                        >the junior pipeline is being severed, and this will
-                        likely create a talent crisis in 3-5 years - meaning
-                        opportunity for those who stay the course.</strong
-                    >
-                </p>
-                <hr class="divider-thin" />
-                <span class="section-num" aria-hidden="true">01</span>
-                <h2 class="section-title">
-                    The junior pipeline is being severely narrowed
-                </h2>
-                <div class="data-card">
-                    <div class="stat">
-                        <span class="stat-number">-78%</span
-                        ><span class="stat-label"
-                            >Juniors at Big Tech<br />(32%→7%, 2019-2026)<sup
-                                ><a href="#fn1">[1]</a></sup
-                            ></span
-                        >
+
+            <!-- ABOUT -->
+            <section class="about" id="about">
+                <div class="about__welcome">
+                    <div>
+                        <p class="section__label fade-in">Nice to meet you!</p>
+                        <h2 class="section__title fade-in delay-1">Welcome to...</h2>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">-60%</span
-                        ><span class="stat-label"
-                            >Entry-level postings<br />(2022→2024)<sup
-                                ><a href="#fn2">[2]</a></sup
-                            ></span
-                        >
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">-73%</span
-                        ><span class="stat-label"
-                            >Junior hiring<br />industry-wide<sup
-                                ><a href="#fn1">[1]</a></sup
-                            ></span
-                        >
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">~1.2M</span
-                        ><span class="stat-label"
-                            >Projected software<br />engineer shortage
-                            (2026)<sup><a href="#fn1">[1]</a></sup></span
-                        >
-                    </div>
-                </div>
-                <p class="note">
-                    Note: These figures come from industry analysis referencing
-                    BLS data and employer surveys, not peer-reviewed research.
-                    Read as trend estimates, not absolute figures.
-                </p>
-                <p>
-                    If the industry cuts nearly all junior hiring today, who
-                    becomes mid-level in 3 years? A similar scenario played out
-                    after 2008: companies froze junior hiring, then around 2012
-                    struggled to find 3-5 year engineers because the pipeline
-                    had been disrupted.<sup><a href="#fn3">[3]</a></sup>
-                </p>
-                <div class="pullquote">
-                    <p>
-                        Cut a tree at the roots, then wonder 3 years later why
-                        there's no fruit - that's what the industry is doing.
-                    </p>
-                </div>
-                <hr class="divider-thin" />
-                <span class="section-num" aria-hidden="true">02</span>
-                <h2 class="section-title">AI's infrastructure ceiling</h2>
-                <p>
-                    <strong>Power:</strong> A single AI task can consume ~1,000×
-                    the electricity of a web search.<sup
-                        ><a href="#fn4">[4]</a></sup
-                    >
-                    Global data centers are projected to exceed 1,000 TWh by
-                    2026; the US grid faces a potential 6 GW shortfall by
-                    2027.<sup><a href="#fn5">[5]</a></sup> US retail electricity
-                    prices have risen up to 42% since 2019.<sup
-                        ><a href="#fn6">[6]</a></sup
-                    >
-                </p>
-                <p>
-                    <strong>Chips:</strong> At the Nature Conference on
-                    post-Moore materials (Nov 2025), scientists stated silicon
-                    is approaching physical limits.<sup
-                        ><a href="#fn7">[7]</a></sup
-                    >
-                    Below 5nm, manufacturing costs tend to rise rather than
-                    fall.<sup><a href="#fn8">[8]</a></sup> A leading-edge fab in
-                    2026 costs over $20B.<sup><a href="#fn9">[9]</a></sup>
-                </p>
-                <p>
-                    <strong>Thermal limits:</strong> Next-gen AI GPUs consume
-                    ~1,000W per package. You can't speed up what you can't
-                    cool.<sup><a href="#fn10">[10]</a></sup>
-                </p>
-                <aside class="insight-box">
-                    <p class="insight-label">What this means for you</p>
-                    <p>
-                        In the short term (2-3 years), AI will likely improve
-                        through architecture and algorithms - not through an
-                        exponential leap that fully replaces humans. People are
-                        still needed to build, operate, and evaluate these
-                        systems.
-                    </p>
-                </aside>
-                <hr class="divider-thin" />
-                <span class="section-num" aria-hidden="true">03</span>
-                <h2 class="section-title">
-                    AI transforms roles - it doesn't erase them
-                </h2>
-                <p>
-                    AI tends to amplify the output of skilled engineers rather
-                    than replace the need for foundational skills.<sup
-                        ><a href="#fn11">[11]</a></sup
-                    >
-                    If you don't understand system architecture, who reviews the
-                    code AI generates?
-                </p>
-                <p>
-                    ATMs didn't kill banking. When each branch needed fewer
-                    tellers, banks opened more branches - total employment
-                    actually grew. This is the <strong>Jevons paradox</strong>.
-                    A similar pattern is emerging across many organizations with
-                    AI.<sup><a href="#fn3">[3]</a></sup>
-                </p>
-                <div class="pullquote">
-                    <p>
-                        "AI replaces developers" is a narrative driven by
-                        marketing. In many organizations, AI is changing the
-                        type of work more than reducing total demand.
-                    </p>
-                </div>
-                <hr class="divider-thin" />
-                <span class="section-num" aria-hidden="true">04</span>
-                <h2 class="section-title">What this article doesn't deny</h2>
-                <div class="disclaimer-box">
-                    <div class="disclaimer-label">To be clear</div>
-                    <ul>
-                        <li>
-                            <strong
-                                >The junior market is genuinely brutal right
-                                now.</strong
-                            >
-                            The decline in entry-level positions is real.
-                        </li>
-                        <li>
-                            <strong
-                                >AI is genuinely reducing demand for certain
-                                tasks</strong
-                            >
-                            - boilerplate, simple unit tests, basic CRUD.
-                        </li>
-                        <li>
-                            <strong
-                                >Persistence alone doesn't guarantee
-                                success.</strong
-                            >
-                            This is about probabilities, not promises.
-                        </li>
-                        <li>
-                            <strong
-                                >The Jevons paradox is not a natural law</strong
-                            >
-                            - it may not repeat exactly with AI.
-                        </li>
-                    </ul>
-                    <p class="disclaimer-thesis">
-                        The thesis:
-                        <em
-                            >even though all of the above is true, cutting the
-                            junior pipeline at this scale will likely create a
-                            serious talent gap in 3-5 years - and that's an
-                            opportunity for those who prepare now.</em
-                        >
-                    </p>
-                </div>
-                <hr class="divider-thin" />
-                <span class="section-num" aria-hidden="true">05</span>
-                <h2 class="section-title">Skills to invest in now</h2>
-                <p>
-                    <strong>One - Learn "systems", not just "code".</strong> In
-                    2026, AI generates a To-Do app in 60 seconds. Your portfolio
-                    must prove architecture, deployment, CI/CD, database
-                    understanding.
-                </p>
-                <div class="checklist">
-                    Build 2 end-to-end apps (frontend + backend + DB + cloud
-                    deploy)
-                </div>
-                <p>
-                    <strong>Two - Learn to work WITH AI.</strong> Learn context
-                    engineering - managing LLM context windows, evaluating AI
-                    output, catching bugs in AI-generated code.<sup
-                        ><a href="#fn12">[12]</a></sup
-                    >
-                </p>
-                <div class="checklist">
-                    Master at least 1 AI workflow (Cursor / Copilot / Claude
-                    Code)
-                </div>
-                <p>
-                    <strong>Three - Aim where the demand is.</strong> Mid-size
-                    SaaS, healthcare, finance, insurance, logistics have more
-                    stable demand.<sup><a href="#fn2">[2]</a></sup
-                    ><sup><a href="#fn3">[3]</a></sup>
-                </p>
-                <div class="checklist">
-                    Expand to 3+ alternative job titles and 2+ non-pure-tech
-                    industries
-                </div>
-                <p><strong>Four - Contribute to open source.</strong></p>
-                <div class="checklist">3-5 quality PRs to real projects</div>
-                <p>
-                    <strong>Five - Be patient, but strategically.</strong> The
-                    path typically takes 6-18 months.<sup
-                        ><a href="#fn2">[2]</a></sup
-                    >
-                    Every month you persist = accumulating something AI can't.
-                </p>
-                <hr class="divider-thin" />
-                <span class="section-num" aria-hidden="true">06</span>
-                <h2 class="section-title">The next 3-5 years</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2026 - NOW</div>
-                        <div class="timeline-text">
-                            Junior pipeline blocked. "AI replaces devs" at peak.
-                            <strong
-                                >Hardest moment - but also the moment to build
-                                your foundation.</strong
-                            >
+
+                    <div class="about__stats fade-in delay-2">
+                        <div class="about__stat">
+                            <span class="about__stat-number">8+</span>
+                            <span class="about__stat-label">Years<br>experience</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">10+</span>
+                            <span class="about__stat-label">Projects<br>completed</span>
+                        </div>
+                        <div class="about__stat">
+                            <span class="about__stat-number">4</span>
+                            <span class="about__stat-label">Products<br>in production</span>
                         </div>
                     </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2027-2028</div>
-                        <div class="timeline-text">
-                            Retirement wave (est. 18% of senior devs).<sup
-                                ><a href="#fn13">[13]</a></sup
-                            >
-                            Power/chip limits slow AI expansion.<sup
-                                ><a href="#fn5">[5]</a></sup
-                            ><sup><a href="#fn7">[7]</a></sup> Companies start
-                            feeling the mid-level gap.
+
+                    <p class="about__bio fade-in delay-3">
+                        Senior Frontend Engineer with 8+ years building scalable, component-driven web applications across gaming, healthcare, and enterprise domains. Deep expertise in Vue 3 / React ecosystems, design system architecture, and AI-integrated interfaces. Experienced in writing technical documentation, mentoring junior developers, and delivering production-grade solutions in cross-functional teams of 10+.
+                    </p>
+
+                    <a href="#contact" class="btn btn--dark fade-in delay-4">
+                        <span>Download CV</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="about__experience">
+                    <p class="section__label">Experience</p>
+                    <h2 class="section__title">My Experience</h2>
+
+                    <div class="about__exp-list">
+                        <div class="about__exp-item">
+                            <div class="about__exp-header">
+                                <strong class="about__exp-role">Frontend Engineer</strong>
+                                <span class="about__exp-company">— Smilegate Vietnam</span>
+                            </div>
+                            <span class="about__exp-date">Sep 2024 – Present</span>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2029-2031</div>
-                        <div class="timeline-text">
-                            If pipeline isn't restored, talent crisis becomes
-                            visible.<sup><a href="#fn1">[1]</a></sup
-                            ><sup><a href="#fn3">[3]</a></sup>
-                            <strong
-                                >If you have 3-5 years of experience by then,
-                                you're in a very strong position.</strong
-                            >
+                        <div class="about__exp-item">
+                            <div class="about__exp-header">
+                                <strong class="about__exp-role">Frontend Developer</strong>
+                                <span class="about__exp-company">— Clik JSC</span>
+                            </div>
+                            <span class="about__exp-date">Aug 2022 – Sep 2024</span>
+                        </div>
+                        <div class="about__exp-item">
+                            <div class="about__exp-header">
+                                <strong class="about__exp-role">Frontend Developer</strong>
+                                <span class="about__exp-company">— FPT Software</span>
+                            </div>
+                            <span class="about__exp-date">Apr 2018 – Aug 2022</span>
+                        </div>
+                        <div class="about__exp-item">
+                            <div class="about__exp-header">
+                                <strong class="about__exp-role">Frontend Developer</strong>
+                                <span class="about__exp-company">— LacViet</span>
+                            </div>
+                            <span class="about__exp-date">Jul 2017 – Apr 2018</span>
                         </div>
                     </div>
                 </div>
-                <hr class="divider-thin" />
-                <p>
-                    The market is brutal right now. But brutal for those who
-                    send résumés and wait - not for those who build, learn, and
-                    contribute.
-                </p>
-                <div class="pullquote">
-                    <p>
-                        The market doesn't reward the fastest. It rewards those
-                        still standing when everyone else has walked away.
-                    </p>
+            </section>
+
+            <!-- SKILLS / SERVICES -->
+            <section class="section" id="skills">
+                <p class="section__label fade-in">Service</p>
+                <h2 class="section__title fade-in delay-1">My Specialties</h2>
+
+                <div class="services__list">
+                    <div class="service-item service-item--active fade-in delay-2">
+                        <span class="service-item__name">Frontend Core</span>
+                        <span class="service-item__desc">Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS — building modern, scalable and responsive interfaces.</span>
+                        <span class="service-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </div>
+                    <div class="service-item fade-in delay-2">
+                        <span class="service-item__name">Design System</span>
+                        <span class="service-item__desc">Storybook, Component Library Architecture — building reusable component systems across multiple products.</span>
+                        <span class="service-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </div>
+                    <div class="service-item fade-in delay-3">
+                        <span class="service-item__name">AI Integration</span>
+                        <span class="service-item__desc">LLM Agent, Google AI Studio, WebAssembly inference — integrating AI into real-world applications.</span>
+                        <span class="service-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </div>
+                    <div class="service-item fade-in delay-3">
+                        <span class="service-item__name">Backend & Infra</span>
+                        <span class="service-item__desc">Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform — solid backend and infrastructure.</span>
+                        <span class="service-item__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                        </span>
+                    </div>
                 </div>
-                <p
-                    style="
-                        text-align: center;
-                        margin-top: 2rem;
-                        font-style: italic;
-                        color: var(--muted);
-                    "
-                >
-                    Stay steady and stay patient.<br />- Written in Saigon,
-                    April 2026
-                </p>
-            </article>
+            </section>
+
+            <!-- BLOG / WRITINGS -->
+            <section class="section" id="writing">
+                <p class="section__label fade-in" style="text-align: center;">Blog</p>
+                <h2 class="section__title fade-in delay-1" style="text-align: center;">Read my blog</h2>
+
+                <div class="blog__grid">
+                    <a href="posts/junior-dev-letter/en.html" class="blog-card fade-in delay-2">
+                        <div class="blog-card__image" style="background: linear-gradient(135deg, #FFB147 0%, #FF6C63 50%, #B86ADF 100%); display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 48px; color: white; font-weight: 700; font-family: 'Poppins', sans-serif;">JR</span>
+                        </div>
+                        <div class="blog-card__details">
+                            <time class="blog-card__date">April, 2026</time>
+                            <h3 class="blog-card__title">To the Junior Dev<br>Generation: Don't Give Up</h3>
+                            <div class="blog-card__separator"></div>
+                        </div>
+                    </a>
+
+                    <div class="blog-card fade-in delay-3" style="opacity: 0.4;">
+                        <div class="blog-card__image" style="background: var(--color-black-05);"></div>
+                        <div class="blog-card__details">
+                            <time class="blog-card__date">Coming soon</time>
+                            <h3 class="blog-card__title">Next<br>article...</h3>
+                            <div class="blog-card__separator"></div>
+                        </div>
+                    </div>
+
+                    <div class="blog-card fade-in delay-4" style="opacity: 0.4;">
+                        <div class="blog-card__image" style="background: var(--color-black-05);"></div>
+                        <div class="blog-card__details">
+                            <time class="blog-card__date">Coming soon</time>
+                            <h3 class="blog-card__title">In<br>progress...</h3>
+                            <div class="blog-card__separator"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 64px;">
+                    <a href="posts/junior-dev-letter/en.html" class="btn btn--dark fade-in">
+                        <span>Load more</span>
+                        <span class="btn__icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="contact" id="contact">
+                <div class="contact__info">
+                    <p class="section__label fade-in">Contact</p>
+                    <h2 class="section__title fade-in delay-1">Reach out me</h2>
+
+                    <p class="contact__address fade-in delay-2">Ho Chi Minh City, Vietnam</p>
+
+                    <p class="contact__phone fade-in delay-2">+84 34 944 6739</p>
+                    <p class="contact__email-text fade-in delay-3">natuong2017@gmail.com</p>
+
+                    <div class="contact__socials fade-in delay-4">
+                        <a href="https://github.com/tuongna" target="_blank" rel="noopener" class="contact__social-link">GitHub</a>
+                        <a href="https://linkedin.com/in/tuongna" target="_blank" rel="noopener" class="contact__social-link">LinkedIn</a>
+                    </div>
+                </div>
+
+                <div class="contact__form-wrapper">
+                    <h3 class="contact__form-title">Any<br>project?</h3>
+                    <form class="contact__form" action="#" method="POST">
+                        <div class="contact__form-row">
+                            <label for="contact-name" class="sr-only">Name</label>
+                            <input type="text" class="contact__input" placeholder="Name" name="name" id="contact-name">
+                            <label for="contact-email" class="sr-only">Email</label>
+                            <input type="email" class="contact__input" placeholder="Email" name="email" id="contact-email">
+                        </div>
+                        <label for="contact-message" class="sr-only">Message</label>
+                        <textarea class="contact__textarea" placeholder="Message" name="message" rows="3" id="contact-message"></textarea>
+                        <button type="submit" class="btn btn--dark">
+                            <span>Submit now</span>
+                            <span class="btn__icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
         </main>
-
-        <section class="footnotes">
-            <h2 id="sources">Sources</h2>
-            <ol>
-                <li id="fn1">
-                    byteiota - "Junior Developer Extinction" (01/2026) &amp;
-                    "Developer Hiring Crisis 2026" (03/2026)
-                    <span class="fn-desc"
-                        >BLS, IDC/Deel surveys, Big Tech hiring reports.</span
-                    >
-                    <a
-                        href="https://byteiota.com/junior-developer-extinction-67-hiring-collapse-explained/"
-                        target="_blank"
-                        rel="noopener"
-                        >byteiota: Junior Developer Extinction</a
-                    >
-                    ·
-                    <a
-                        href="https://byteiota.com/developer-hiring-crisis-2026-40-worse-junior-drops-73/"
-                        target="_blank"
-                        rel="noopener"
-                        >byteiota: Developer Hiring Crisis 2026</a
-                    >
-                </li>
-                <li id="fn2">
-                    Nucamp - "The Junior Developer Hiring Crisis in 2026"
-                    (01/2026)
-                    <span class="fn-desc"
-                        >Indeed, Morningstar job market outlook.</span
-                    >
-                    <a
-                        href="https://www.nucamp.co/blog/the-junior-developer-hiring-crisis-in-2026-how-to-get-your-first-full-stack-job"
-                        target="_blank"
-                        rel="noopener"
-                        >Nucamp: Junior Developer Hiring Crisis</a
-                    >
-                </li>
-                <li id="fn3">
-                    Medium / JS Guru Jobs - "Companies Quietly Hiring Junior
-                    Developers in 2026" (03/2026)
-                    <span class="fn-desc"
-                        >Pipeline gap analysis, 2008-2012 precedent.</span
-                    >
-                    <a
-                        href="https://medium.com/@kantmusk/the-companies-quietly-hiring-junior-developers-in-2026-while-everyone-else-panics-about-ai-e13028a78d25"
-                        target="_blank"
-                        rel="noopener"
-                        >Medium: Quietly Hiring Junior Developers</a
-                    >
-                </li>
-                <li id="fn4">
-                    Enki AI - "AI Data Center Grid Strain" (02/2026)
-                    <span class="fn-desc"
-                        >Per-query energy consumption estimates.</span
-                    >
-                    <a
-                        href="https://enkiai.com/data-center/ai-data-center-grid-strain-power-halts-growth-in-2026"
-                        target="_blank"
-                        rel="noopener"
-                        >Enki AI: Data Center Grid Strain</a
-                    >
-                </li>
-                <li id="fn5">
-                    ZestLab / IEA - "AI Data Center Energy Projections 2026"
-                    <span class="fn-desc"
-                        >IEA, EIA, PJM grid operator data.</span
-                    >
-                    <a
-                        href="https://zestlab.io/en/trends/ai-data-center-energy-crisis-2026"
-                        target="_blank"
-                        rel="noopener"
-                        >ZestLab: AI Data Center Energy Crisis</a
-                    >
-                </li>
-                <li id="fn6">
-                    Tech Insider - "AI Data Centers Now Use More Power Than 30
-                    Countries" (04/2026)
-                    <span class="fn-desc"
-                        >Goldman Sachs projections, PJM capacity market.</span
-                    >
-                    <a
-                        href="https://tech-insider.org/ai-data-center-power-crisis-2026/"
-                        target="_blank"
-                        rel="noopener"
-                        >Tech Insider: AI Data Center Power Crisis</a
-                    >
-                </li>
-                <li id="fn7">
-                    Nature - "From Moore to more: the future of silicon chips"
-                    (03/2026)
-                    <span class="fn-desc"
-                        >Nature Conference on Post-Moore Era (11/2025).</span
-                    >
-                    <a
-                        href="https://www.nature.com/articles/d42473-026-00049-w"
-                        target="_blank"
-                        rel="noopener"
-                        >Nature: Future of Silicon Chips</a
-                    >
-                </li>
-                <li id="fn8">
-                    PatentPC - "The Future of Moore's Law" (03/2026)
-                    <span class="fn-desc"
-                        >Sub-5nm cost analysis, EUV economics.</span
-                    >
-                    <a
-                        href="https://patentpc.com/blog/the-future-of-moores-law-are-we-nearing-the-limit-latest-semiconductor-trends"
-                        target="_blank"
-                        rel="noopener"
-                        >PatentPC: Future of Moore's Law</a
-                    >
-                </li>
-                <li id="fn9">
-                    SubTech - "Does Moore's Law Still Apply?" (01/2026)
-                    <span class="fn-desc">Fab cost, High-NA EUV pricing.</span>
-                    <a
-                        href="https://subtech.it.com/does-moore-s-law-still-apply-today-the-shocking-2026-truth/"
-                        target="_blank"
-                        rel="noopener"
-                        >SubTech: Does Moore's Law Still Apply?</a
-                    >
-                </li>
-                <li id="fn10">
-                    PMC/NIH - "Moore's Law revisited through Intel chip density"
-                    <span class="fn-desc"
-                        >Peer-reviewed: thermal limits, logistic scaling.</span
-                    >
-                    <a
-                        href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8372957/"
-                        target="_blank"
-                        rel="noopener"
-                        >PMC/NIH: Moore's Law Revisited</a
-                    >
-                </li>
-                <li id="fn11">
-                    BEON.tech - "Software Developer Talent Shortage in 2026"
-                    (03/2026)
-                    <span class="fn-desc"
-                        >AI amplifying senior output vs. replacing
-                        juniors.</span
-                    >
-                    <a
-                        href="https://beon.tech/blog/software-development-talent-shortage/"
-                        target="_blank"
-                        rel="noopener"
-                        >BEON.tech: Software Developer Talent Shortage</a
-                    >
-                </li>
-                <li id="fn12">
-                    Denoise Digital - "The Disappearance of the Junior
-                    Developer" (02/2026)
-                    <span class="fn-desc"
-                        >Coder-to-architect roadmap, context engineering.</span
-                    >
-                    <a
-                        href="https://www.denoise.digital/the-disappearance-of-the-junior-developer-how-to-start-a-career-in-2026/"
-                        target="_blank"
-                        rel="noopener"
-                        >Denoise Digital: Disappearance of the Junior
-                        Developer</a
-                    >
-                </li>
-                <li id="fn13">
-                    Full Scale - "Developer Hiring Trends 2026" (11/2025)
-                    <span class="fn-desc"
-                        >BLS: senior retirements, H-1B impact.</span
-                    >
-                    <a
-                        href="https://fullscale.io/blog/developer-hiring-trends-2026/"
-                        target="_blank"
-                        rel="noopener"
-                        >Full Scale: Developer Hiring Trends 2026</a
-                    >
-                </li>
-            </ol>
-        </section>
-
-        <footer class="footer">
-            <p>
-                © 2026 · Open letter ·
-                <a href="./" style="color: var(--muted)">VI</a> ·
-                <a href="en.html" style="color: var(--accent)">EN</a> ·
-                <a href="ko.html" style="color: var(--muted)">KO</a>
-            </p>
-        </footer>
-    </body>
+    </div>
+</body>
 </html>
