@@ -48,12 +48,50 @@ const { data: page } = await useAsyncData(`blog-${locale.value}-${slug.value}`, 
 })
 
 if (page.value) {
+  const siteUrl = 'https://tuongna.github.io'
+  
   useSeoMeta({
     title: page.value.title,
     description: page.value.description,
     ogTitle: page.value.title,
     ogDescription: page.value.description,
     ogType: 'article',
+    ogImage: `${siteUrl}/og-image.png`,
+    ogImageWidth: 1200,
+    ogImageHeight: 630,
+    twitterCard: 'summary_large_image',
+    twitterTitle: page.value.title,
+    twitterDescription: page.value.description,
+    twitterImage: `${siteUrl}/og-image.png`,
+  })
+
+  useHead({
+    script: [
+      {
+        type: 'application/ld+json',
+        innerHTML: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: page.value.title,
+          description: page.value.description,
+          datePublished: page.value.date || undefined,
+          inLanguage: locale.value,
+          author: {
+            '@type': 'Person',
+            name: 'Nguyen Anh Tuong',
+            url: siteUrl
+          },
+          publisher: {
+            '@type': 'Organization',
+            name: 'Nguyen Anh Tuong - Portfolio'
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `${siteUrl}${route.path}`
+          }
+        })
+      }
+    ]
   })
 }
 </script>
