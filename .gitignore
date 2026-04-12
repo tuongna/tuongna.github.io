@@ -9,7 +9,6 @@ dist/
 # Node
 node_modules/
 *.log
-package-lock.json
 
 # IDE
 .vscode/
