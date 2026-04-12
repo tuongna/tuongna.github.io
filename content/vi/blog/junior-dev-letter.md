@@ -1,6 +1,7 @@
 ---
 title: "Gửi thế hệ Junior Dev: Đừng bỏ cuộc — Thời của bạn đang đến"
-date: "Tháng 4, 2026"
+date: 2026-04-01
+displayDate: "Tháng 4, 2026"
 description: "Pipeline junior đang bị cắt đứt, và điều đó nhiều khả năng sẽ tạo ra khủng hoảng nhân lực trong 3-5 năm tới. Thư ngỏ gửi thế hệ junior developer."
 ---
 

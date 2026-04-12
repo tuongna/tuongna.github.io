@@ -1,6 +1,7 @@
 ---
 title: "To the Junior Dev Generation: Don't Give Up — Your Time Is Coming"
-date: "April, 2026"
+date: 2026-04-01
+displayDate: "April, 2026"
 description: "The junior pipeline is being severed, and this will likely create a talent crisis in 3-5 years — meaning opportunity for those who stay the course."
 ---
 

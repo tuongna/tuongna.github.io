@@ -11,7 +11,7 @@
       <h1 class="text-[28px] md:text-[36px] lg:text-[48px] font-bold leading-[1.17] tracking-[-0.02em] mt-4xl mb-md text-base-black">
         {{ page.title }}
       </h1>
-      <p class="text-[16px] text-base-black/80 mb-4xl">{{ page.date }}</p>
+      <p class="text-[16px] text-base-black/80 mb-4xl">{{ page.displayDate || page.date }}</p>
 
       <div class="prose">
         <ContentRenderer :value="page" />
