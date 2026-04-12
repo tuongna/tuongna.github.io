@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://tuongna.github.io/sitemap.xml
