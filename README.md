@@ -1,66 +1,60 @@
 # tuongna.github.io
 
-Personal portfolio and blog of **Nguyen Anh Tuong** — Senior Frontend Engineer with 8+ years of experience building scalable web applications across gaming, healthcare, and enterprise domains.
+Personal portfolio and blog of **Nguyen Anh Tuong** — Senior Frontend Engineer. This project was recently migrated from a static multi-file structure to a modern **Nuxt 4** framework for better maintainability and performance.
 
 🌐 **Live:** [tuongna.github.io](https://tuongna.github.io/)
 
 ---
 
-## Tech Stack
+## 🚀 Tech Stack
 
-- **HTML5** — Semantic markup, WCAG-compliant accessibility
-- **CSS3** — Custom design system with CSS variables, responsive layout, animations
-- **Google Fonts** — Poppins, IBM Plex Sans, IBM Plex Serif, Jost
+- **Framework:** [Nuxt 4](https://nuxt.com/) (Beta/v4.4.2)
+- **Content:** [@nuxt/content v3](https://content.nuxt.com/) (Markdown-based blog engine)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) (CSS-first engine)
+- **Multilingual:** [@nuxtjs/i18n](https://i18n.nuxtjs.org/) (VI, EN, KO support)
+- **Hosting:** GitHub Pages via GitHub Actions
 
-No frameworks, no build tools. Pure static site hosted on GitHub Pages.
+## ✨ Key Features
 
-## Features
+- 🌍 **Trilingual** — Full support for Vietnamese, English, and Korean with localized routing.
+- ♿ **Accessible** — Semantic HTML5, WCAG-compliant contrast ratios (#c0392b links), and ARIA labels.
+- 🔍 **SEO-ready** — Dynamic Meta tags, Open Graph images, sitemap, and canonical URLs.
+- 📱 **Responsive** — Sidebar-driven layout optimized for desktop and mobile.
+- ⚡ **Performance** — Localized date handling and optimized asset loading.
 
-- 🌍 **Trilingual** — Vietnamese (default), English, Korean
-- ♿ **Accessible** — ARIA labels, screen-reader-only form labels, semantic heading structure
-- 🔍 **SEO-optimized** — Open Graph, hreflang, canonical URLs, sitemap, robots.txt
-- 📱 **Responsive** — Sidebar collapses on mobile with toggle menu
-- ✨ **Figma-based design** — Gradient blobs, smooth fade-in animations, brand color system
+## 📂 Project Structure
 
-## Project Structure
-
-```
+```bash
 tuongna.github.io/
-├── index.html              # Home — Vietnamese (default)
-├── en.html                 # Home — English
-├── ko.html                 # Home — Korean
-├── portfolio.css           # Main stylesheet & design tokens
-├── posts/
-│   └── junior-dev-letter/
-│       ├── index.html      # Blog post — Vietnamese
-│       ├── en.html         # Blog post — English
-│       └── ko.html         # Blog post — Korean
-├── style.css               # Blog post stylesheet
-├── sitemap.xml
-├── robots.txt
+├── components/         # Shared UI components (AppSidebar, BaseButton, etc.)
+├── content/            # Blog posts in Markdown (vi/, en/, ko/)
+├── layouts/            # Page layouts
+├── pages/              # Nuxt pages & routing ([...slug].vue for blog)
+├── public/             # Static assets (favicons, og-images)
+├── assets/             # Global CSS and Tailwind v4 configuration
 └── README.md
 ```
 
-## Run Locally
+## 🛠️ Local Development
 
 ```bash
-# Any static server works. For example:
-npx serve .
+# 1. Clone & Install
+npm install
 
-# Or with Python:
-python -m http.server 8080
+# 2. Run dev server
+npm run dev
+
+# 3. Build for production (Static Generation)
+npm run generate
 ```
 
-Then open [http://localhost:8080](http://localhost:8080).
+## 📝 Blog
 
-## Blog Posts
+Managing the pipeline gap and workforce transitions in the AI era.
+- **Topics:** Career guidance, Junior developer landscape, AI vs. Engineering.
+- **Versions:** [VI](https://tuongna.github.io/vi/blog/junior-dev-letter), [EN](https://tuongna.github.io/en/blog/junior-dev-letter), [KO](https://tuongna.github.io/ko/blog/junior-dev-letter).
 
-| Title | Date | Link |
-|-------|------|------|
-| To the Junior Dev Generation: Don't Give Up | April 2026 | [Read →](https://tuongna.github.io/posts/junior-dev-letter/en.html) |
-
-## License
+## 📄 License
 
 © 2026 Nguyen Anh Tuong. All rights reserved.
-
-The source code and design of this website are proprietary. The blog content may be shared with proper attribution but may not be used commercially.
+The source code and design of this website are proprietary. Blog content may be shared with proper attribution.
