@@ -42,7 +42,7 @@
       </div>
 
       <nav class="flex gap-xs justify-center" :aria-label="$t('sidebar.langAria')">
-        <NuxtLink v-for="loc in locales" :key="loc.code" :to="switchLocalePath(loc.code)" class="text-[13px] font-semibold px-[12px] py-[6px] bg-transparent text-white/50 no-underline rounded-[4px] transition-all duration-200 hover:text-white/80" :class="{ 'bg-white/15 !text-white': locale === loc.code }">
+        <NuxtLink v-for="loc in locales" :key="loc.code" :to="switchLocalePath(loc.code)" class="text-[13px] font-semibold px-[12px] py-[6px] bg-transparent text-white/70 no-underline rounded-[4px] transition-all duration-200 hover:text-white" :class="{ 'bg-white/15 !text-white': locale === loc.code }">
           {{ loc.code.toUpperCase() }}
         </NuxtLink>
       </nav>
