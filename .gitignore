@@ -1,5 +1,37 @@
-.agent/
+# Nuxt dev/build
+.nuxt/
+.output/
+.data/
+.nitro/
+.cache/
+dist/
+
+# Node
 node_modules/
+*.log
+package-lock.json
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
 Thumbs.db
-*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Agent infrastructure
+.agent/
+
+# Legacy files (duplicates already in public/)
+/favicon.svg
+/og-image.png
+/robots.txt
+/sitemap.xml
+
+# Backup (legacy HTML posts — kept locally only)
+backup/

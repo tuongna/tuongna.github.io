@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "blog": "Blog",
+    "contact": "Contact",
+    "skipToContent": "Skip to content",
+    "toggleMenu": "Toggle menu"
+  },
+  "sidebar": {
+    "logoAria": "Home - Nguyen Anh Tuong",
+    "navAria": "Main Navigation",
+    "langAria": "Language",
+    "copyright": "2026 Nguyen Anh Tuong"
+  },
+  "hero": {
+    "greeting": "Senior Frontend Engineer — Vietnam",
+    "name": "Nguyen\nAnh\nTuong",
+    "cta": "Let's talk with me",
+    "phone": "+84 34 944 6739",
+    "email": "natuong2017{'@'}gmail.com"
+  },
+  "about": {
+    "label": "Nice to meet you!",
+    "title": "Welcome to...",
+    "bio": "Senior Frontend Engineer with 8+ years building scalable, component-driven web applications across gaming, healthcare, and enterprise domains. Deep expertise in Vue 3 / React ecosystems, design system architecture, and AI-integrated interfaces. Experienced in writing technical documentation, mentoring junior developers, and delivering production-grade solutions in cross-functional teams of 10+.",
+    "downloadCv": "Download CV",
+    "experienceLabel": "Experience",
+    "experienceTitle": "My Experience",
+    "stats": {
+      "yearsNum": "8+",
+      "yearsLabel": "Years\nexperience",
+      "projectsNum": "10+",
+      "projectsLabel": "Projects\ncompleted",
+      "productsNum": "4",
+      "productsLabel": "Products\nin production"
+    },
+    "experience": [
+      { "role": "Frontend Engineer", "company": "Smilegate Vietnam", "date": "Sep 2024 – Present" },
+      { "role": "Frontend Developer", "company": "Clik JSC", "date": "Aug 2022 – Sep 2024" },
+      { "role": "Frontend Developer", "company": "FPT Software", "date": "Apr 2018 – Aug 2022" },
+      { "role": "Frontend Developer", "company": "LacViet", "date": "Jul 2017 – Apr 2018" }
+    ]
+  },
+  "skills": {
+    "label": "Service",
+    "title": "My Specialties",
+    "items": [
+      { "name": "Frontend Core", "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS", "desc": "building modern, scalable and responsive interfaces." },
+      { "name": "Design System", "tech": "Storybook, Component Library Architecture", "desc": "building reusable component systems across multiple products." },
+      { "name": "AI Integration", "tech": "LLM Agent, Google AI Studio, WebAssembly inference", "desc": "integrating AI into real-world applications." },
+      { "name": "Backend & Infra", "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform", "desc": "solid backend and infrastructure." }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Read my blog",
+    "readMore": "Load more",
+    "comingSoon": "Coming soon",
+    "placeholder1": "Next\narticle...",
+    "placeholder2": "In\nprogress...",
+    "posts": [
+      { "date": "April, 2026", "title": "To the Junior Dev\nGeneration: Don't Give Up", "slug": "junior-dev-letter" }
+    ]
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Reach out me",
+    "address": "Ho Chi Minh City, Vietnam",
+    "phone": "+84 34 944 6739",
+    "email": "natuong2017{'@'}gmail.com",
+    "formTitle": "Any\nproject?",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "formSubmit": "Submit now"
+  },
+  "seo": {
+    "title": "Nguyen Anh Tuong — Senior Frontend Engineer",
+    "description": "Portfolio of Nguyen Anh Tuong — Senior Frontend Engineer with 8+ years building scalable web apps across gaming, healthcare & enterprise.",
+    "ogDescription": "Senior Frontend Engineer with 8+ years building scalable, component-driven web applications."
+  }
+}

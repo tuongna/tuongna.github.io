@@ -1,0 +1,23 @@
+{
+  "name": "tuongna.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio of Nguyen Anh Tuong — Senior Frontend Engineer",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.12.0",
+    "@nuxtjs/i18n": "^10.2.4",
+    "@tailwindcss/vite": "^4.2.2",
+    "better-sqlite3": "^12.8.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "nuxt": "^4.4.2",
+    "tailwind-merge": "^3.5.0"
+  }
+}

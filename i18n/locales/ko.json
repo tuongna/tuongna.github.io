@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "홈",
+    "about": "소개",
+    "skills": "기술",
+    "blog": "블로그",
+    "contact": "연락처",
+    "skipToContent": "본문으로 건너뛰기",
+    "toggleMenu": "메뉴 전환"
+  },
+  "sidebar": {
+    "logoAria": "홈 - 응웬 아인 뜨엉",
+    "navAria": "주요 탐색",
+    "langAria": "언어",
+    "copyright": "2026 응웬 아인 뜨엉"
+  },
+  "hero": {
+    "greeting": "시니어 프론트엔드 엔지니어 — 베트남",
+    "name": "Nguyen\nAnh\nTuong",
+    "cta": "연락하기",
+    "phone": "+84 34 944 6739",
+    "email": "natuong2017{'@'}gmail.com"
+  },
+  "about": {
+    "label": "만나서 반갑습니다!",
+    "title": "자기소개...",
+    "bio": "게임, 헬스케어, 엔터프라이즈 분야에서 8년 이상 확장 가능한 컴포넌트 기반 웹 애플리케이션을 구축한 시니어 프론트엔드 엔지니어입니다. Vue 3 / React 생태계, 디자인 시스템 아키텍처, AI 통합 인터페이스에 대한 전문 지식을 보유하고 있습니다.",
+    "downloadCv": "이력서 다운로드",
+    "experienceLabel": "경험",
+    "experienceTitle": "경력 사항",
+    "stats": {
+      "yearsNum": "8+",
+      "yearsLabel": "년\n경험",
+      "projectsNum": "10+",
+      "projectsLabel": "완료된\n프로젝트",
+      "productsNum": "4",
+      "productsLabel": "운영 중인\n제품"
+    },
+    "experience": [
+      { "role": "프론트엔드 엔지니어", "company": "Smilegate Vietnam", "date": "2024년 9월 – 현재" },
+      { "role": "프론트엔드 개발자", "company": "Clik JSC", "date": "2022년 8월 – 2024년 9월" },
+      { "role": "프론트엔드 개발자", "company": "FPT Software", "date": "2018년 4월 – 2022년 8월" },
+      { "role": "프론트엔드 개발자", "company": "LacViet", "date": "2017년 7월 – 2018년 4월" }
+    ]
+  },
+  "skills": {
+    "label": "서비스",
+    "title": "전문 기술",
+    "items": [
+      { "name": "Frontend Core", "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS", "desc": "현대적이고 확장 가능한 반응형 인터페이스 구축." },
+      { "name": "Design System", "tech": "Storybook, Component Library Architecture", "desc": "여러 제품에 걸쳐 재사용 가능한 컴포넌트 시스템 구축." },
+      { "name": "AI Integration", "tech": "LLM Agent, Google AI Studio, WebAssembly inference", "desc": "실제 애플리케이션에 AI 통합." },
+      { "name": "Backend & Infra", "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform", "desc": "견고한 백엔드 및 인프라." }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "블로그 글",
+    "readMore": "더 보기",
+    "comingSoon": "곧 공개",
+    "placeholder1": "다음\n글...",
+    "placeholder2": "준비\n중...",
+    "posts": [
+      { "date": "2026년 4월", "title": "주니어 개발자에게:\n포기하지 마세요", "slug": "junior-dev-letter" }
+    ]
+  },
+  "contact": {
+    "label": "연락처",
+    "title": "연락 주세요",
+    "address": "호치민 시, 베트남",
+    "phone": "+84 34 944 6739",
+    "email": "natuong2017{'@'}gmail.com",
+    "formTitle": "프로젝트가\n있으신가요?",
+    "formName": "이름",
+    "formEmail": "이메일",
+    "formMessage": "메시지",
+    "formSubmit": "보내기"
+  },
+  "seo": {
+    "title": "응웬 아인 뜨엉 — 시니어 프론트엔드 엔지니어",
+    "description": "응웬 아인 뜨엉의 포트폴리오 — 8년 이상의 경험을 가진 시니어 프론트엔드 엔지니어.",
+    "ogDescription": "8년 이상의 경험을 가진 시니어 프론트엔드 엔지니어의 개인 포트폴리오."
+  }
+}

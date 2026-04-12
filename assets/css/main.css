@@ -1,0 +1,623 @@
+@import "tailwindcss";
+
+/* ============================================
+   Design Tokens — Migrated from portfolio.css
+   
+   IMPORTANT: Do NOT override Tailwind v4 built-in 
+   token names (white, black, xs, sm, md, lg, xl, 2xl, etc.)
+   Use custom prefixed names to avoid conflicts.
+   ============================================ */
+@theme {
+  /* Custom brand colors */
+  --color-dark-alt: #060200;
+  --color-dark-text: #191917;
+  --color-brand-orange: #FFB147;
+  --color-brand-coral: #FF6C63;
+  --color-brand-purple: #B86ADF;
+  --color-base-black: #141313;
+
+  /* Opacity variants of base-black — use 'muted' prefix 
+     to avoid colliding with TW4's built-in 'black' namespace */
+  --color-muted-80: #141313cc;
+  --color-muted-20: #14131333;
+  --color-muted-10: #1413131a;
+  --color-muted-05: #1413130d;
+
+  /* Fonts */
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: 'IBM Plex Serif', Georgia, serif;
+  --font-mono: 'Jost', sans-serif;
+
+  /* Custom Spacing Scale */
+  --spacing-xs: 8px;
+  --spacing-sm: 10px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 40px;
+  --spacing-4xl: 48px;
+  --spacing-5xl: 56px;
+  --spacing-6xl: 64px;
+  --spacing-sidebar: 285px;
+}
+
+/* ============================================
+   Custom Utilities — Gradient Backgrounds
+   Tailwind v4 bg-* maps to background-color,
+   so gradients need custom @utility directives.
+   ============================================ */
+@utility bg-gradient-brand {
+  background: linear-gradient(-87deg,
+    rgba(255, 177, 71, 1) 6%,
+    rgba(255, 108, 99, 1) 51%,
+    rgba(184, 106, 223, 1) 92%);
+}
+
+@utility bg-gradient-line {
+  background: linear-gradient(90deg,
+    rgba(255, 177, 71, 1) 0%,
+    rgba(255, 108, 99, 1) 50%,
+    rgba(184, 106, 223, 1) 100%);
+}
+
+/* Gradient text utility for stat numbers */
+@utility text-gradient-brand {
+  background: linear-gradient(-87deg,
+    rgba(255, 177, 71, 1) 6%,
+    rgba(255, 108, 99, 1) 51%,
+    rgba(184, 106, 223, 1) 92%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   CSS Custom Properties (legacy — NOT scanned by Tailwind)
+   Use --portfolio-* prefix to avoid TW4 auto-detection
+   of --color-* and --spacing-* patterns.
+   ============================================ */
+:root {
+  --portfolio-white: #FFFFFF;
+  --portfolio-black: #141313;
+  --portfolio-dark-alt: #060200;
+  --portfolio-dark-text: #191917;
+
+  --portfolio-brand-orange: #FFB147;
+  --portfolio-brand-coral: #FF6C63;
+  --portfolio-brand-purple: #B86ADF;
+
+  --portfolio-black-80: rgba(20, 19, 19, 0.8);
+  --portfolio-black-20: rgba(20, 19, 19, 0.2);
+  --portfolio-black-10: rgba(20, 19, 19, 0.1);
+  --portfolio-black-05: rgba(20, 19, 19, 0.05);
+
+  --portfolio-spacing-xs: 8px;
+  --portfolio-spacing-sm: 10px;
+  --portfolio-spacing-md: 12px;
+  --portfolio-spacing-lg: 16px;
+  --portfolio-spacing-xl: 20px;
+  --portfolio-spacing-2xl: 24px;
+  --portfolio-spacing-3xl: 40px;
+  --portfolio-spacing-4xl: 48px;
+  --portfolio-spacing-5xl: 56px;
+  --portfolio-spacing-6xl: 64px;
+
+  --portfolio-font-display: 'Poppins', sans-serif;
+  --portfolio-font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --portfolio-font-serif: 'IBM Plex Serif', Georgia, serif;
+  --portfolio-font-mono: 'Jost', sans-serif;
+
+  --gradient-brand: linear-gradient(-87deg,
+      rgba(255, 177, 71, 1) 6%,
+      rgba(255, 108, 99, 1) 51%,
+      rgba(184, 106, 223, 1) 92%);
+  --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-fast: all 0.2s ease;
+}
+
+/* NOTE: Universal reset removed — Tailwind v4 Preflight handles this.\n   Do NOT add * { margin: 0 } as it overrides TW utility classes. */
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #FFFFFF;
+  color: #141313;
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Note: Do NOT use generic 'a { color: inherit }' as it overrides TW utility classes.
+   Use specific class-based styling instead. */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ============================================
+   Accessibility
+   ============================================ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+
+
+/* ============================================
+   Sections
+   ============================================ */
+.section {
+  padding: 100px 115px;
+  position: relative;
+}
+
+.section--dark {
+  background: #141313;
+  color: #FFFFFF;
+}
+
+.section--gradient {
+  background: var(--gradient-brand);
+  color: #FFFFFF;
+}
+
+.section__label {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.33;
+  margin-bottom: 16px;
+}
+
+.section__title {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.17;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-in {
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.slide-in {
+  animation: slideInLeft 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .fade-in,
+  .slide-in {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+.delay-1 {
+  animation-delay: 0.15s;
+}
+
+.delay-2 {
+  animation-delay: 0.3s;
+}
+
+.delay-3 {
+  animation-delay: 0.45s;
+}
+
+.delay-4 {
+  animation-delay: 0.6s;
+}
+
+/* ============================================
+   Mobile Toggle & Overlay
+   ============================================ */
+.sidebar__toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 200;
+  width: 44px;
+  height: 44px;
+  background: var(--color-black);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar__toggle svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-white);
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ============================================
+   Blog Article Page
+   ============================================ */
+.blog-article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.blog-article__back {
+  margin-bottom: 48px;
+}
+
+.blog-article__title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.blog-article__meta {
+  opacity: 0.6;
+  font-size: 16px;
+  margin-bottom: 48px;
+}
+
+/* ============================================
+   Prose — Rendered Markdown Content
+   ============================================ */
+.prose {
+  font-size: 18px;
+  line-height: 2;
+  color: var(--color-black-80);
+}
+
+.prose h2 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-black);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.prose h3 {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.5vw, 24px);
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-black);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+}
+
+.prose strong {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.prose em {
+  font-style: italic;
+}
+
+.prose a {
+  color: var(--color-brand-coral);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition-fast);
+}
+
+.prose a:hover {
+  color: var(--color-brand-purple);
+}
+
+.prose ul,
+.prose ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose blockquote {
+  border-left: 4px solid;
+  border-image: var(--gradient-brand) 1;
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: var(--color-black-05);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--color-black);
+}
+
+.prose blockquote p {
+  margin-bottom: 0;
+}
+
+.prose code {
+  font-family: 'JetBrains Mono', var(--font-mono);
+  font-size: 0.9em;
+  background: var(--color-black-05);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.prose pre {
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+.prose hr {
+  border: none;
+  height: 1px;
+  background: var(--color-black-20);
+  margin: 3rem 0;
+}
+
+.prose sup a {
+  color: var(--color-brand-coral);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Prose data cards & custom elements */
+.prose .data-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+  padding: 2rem;
+  background: var(--color-black-05);
+  border-radius: 12px;
+}
+
+.prose .stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.prose .stat-number {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.prose .stat-label {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--color-black-80);
+}
+
+.prose .pullquote {
+  border-left: 4px solid;
+  border-image: var(--gradient-brand) 1;
+  padding: 1.5rem 2rem;
+  margin: 2.5rem 0;
+  background: var(--color-black-05);
+  border-radius: 0 8px 8px 0;
+}
+
+.prose .pullquote p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--color-black);
+  font-style: italic;
+  margin: 0;
+}
+
+.prose .insight-box {
+  background: linear-gradient(135deg, rgba(255, 177, 71, 0.1), rgba(184, 106, 223, 0.1));
+  border: 1px solid rgba(255, 177, 71, 0.3);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+}
+
+.prose .insight-label {
+  font-weight: 700;
+  color: var(--color-brand-coral);
+  margin-bottom: 0.5rem;
+}
+
+.prose .disclaimer-box {
+  background: var(--color-black-05);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.prose .disclaimer-label {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: var(--color-black);
+}
+
+.prose .timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 2rem;
+  border-left: 2px solid var(--color-black-20);
+}
+
+.prose .timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+.prose .timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.45rem;
+  top: 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+}
+
+.prose .timeline-year {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-brand-coral);
+  margin-bottom: 0.5rem;
+}
+
+.prose .timeline-text {
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.prose .checklist {
+  background: var(--color-black-05);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 1rem 0 1.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  border-left: 3px solid var(--color-brand-orange);
+}
+
+.prose .footnotes {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 2px solid var(--color-black-10);
+}
+
+.prose .footnotes h2 {
+  font-size: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.prose .footnotes ol {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.prose .footnotes li {
+  margin-bottom: 1rem;
+}
+
+.prose .fn-desc {
+  display: block;
+  font-size: 13px;
+  color: var(--color-black-80);
+  font-style: italic;
+}
+
+
+
+@media (max-width: 600px) {
+  .prose {
+    font-size: 16px;
+  }
+
+  .prose blockquote {
+    font-size: 17px;
+    padding: 0.75rem 1rem;
+  }
+
+  .prose .data-card {
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+  }
+
+  .prose .stat-number {
+    font-size: 28px;
+  }
+}

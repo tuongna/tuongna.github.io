@@ -1,0 +1,84 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "skills": "Kỹ năng",
+    "blog": "Bài viết",
+    "contact": "Liên hệ",
+    "skipToContent": "Bỏ qua đến nội dung",
+    "toggleMenu": "Đóng mở menu"
+  },
+  "sidebar": {
+    "logoAria": "Trang chủ - Nguyễn Anh Tường",
+    "navAria": "Điều hướng chính",
+    "langAria": "Ngôn ngữ",
+    "copyright": "2026 Nguyễn Anh Tường"
+  },
+  "hero": {
+    "greeting": "Senior Frontend Engineer — Việt Nam",
+    "name": "Nguyễn\nAnh\nTường",
+    "cta": "Liên hệ với tôi",
+    "phone": "+84 34 944 6739",
+    "email": "natuong2017{'@'}gmail.com"
+  },
+  "about": {
+    "label": "Xin chào!",
+    "title": "Về tôi...",
+    "bio": "Senior Frontend Engineer với hơn 8 năm kinh nghiệm xây dựng ứng dụng web scalable, component-driven trong các lĩnh vực gaming, healthcare và enterprise. Chuyên sâu về Vue 3 / React ecosystem, kiến trúc design system, và tích hợp AI. Có kinh nghiệm viết tài liệu kỹ thuật, mentoring junior và triển khai giải pháp production-grade trong các team 10+ người.",
+    "downloadCv": "Tải CV",
+    "experienceLabel": "Kinh nghiệm",
+    "experienceTitle": "Quá trình làm việc",
+    "stats": {
+      "yearsNum": "8+",
+      "yearsLabel": "Năm\nkinh nghiệm",
+      "projectsNum": "10+",
+      "projectsLabel": "Dự án\nđã hoàn thành",
+      "productsNum": "4",
+      "productsLabel": "Sản phẩm\nđang vận hành"
+    },
+    "experience": [
+      { "role": "Frontend Engineer", "company": "Smilegate Vietnam", "date": "Tháng 9, 2024 – Hiện tại" },
+      { "role": "Frontend Developer", "company": "Clik JSC", "date": "Tháng 8, 2022 – Tháng 9, 2024" },
+      { "role": "Frontend Developer", "company": "FPT Software", "date": "Tháng 4, 2018 – Tháng 8, 2022" },
+      { "role": "Frontend Developer", "company": "LacViet", "date": "Tháng 7, 2017 – Tháng 4, 2018" }
+    ]
+  },
+  "skills": {
+    "label": "Chuyên môn",
+    "title": "Kỹ năng của tôi",
+    "items": [
+      { "name": "Frontend Core", "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS", "desc": "xây dựng giao diện hiện đại, scalable và responsive." },
+      { "name": "Design System", "tech": "Storybook, Component Library Architecture", "desc": "kiến trúc hệ thống component tái sử dụng cho nhiều sản phẩm." },
+      { "name": "AI Integration", "tech": "LLM Agent, Google AI Studio, WebAssembly inference", "desc": "tích hợp AI vào ứng dụng thực tế." },
+      { "name": "Backend & Infra", "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform", "desc": "hạ tầng và backend vững chắc." }
+    ]
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Bài viết của tôi",
+    "readMore": "Đọc thêm",
+    "comingSoon": "Sắp ra mắt",
+    "placeholder1": "Bài viết\ntiếp theo...",
+    "placeholder2": "Đang\nchuẩn bị...",
+    "posts": [
+      { "date": "Tháng 4, 2026", "title": "Gửi thế hệ Junior Dev:\nĐừng bỏ cuộc", "slug": "junior-dev-letter" }
+    ]
+  },
+  "contact": {
+    "label": "Liên hệ",
+    "title": "Kết nối với tôi",
+    "address": "TP. Hồ Chí Minh, Việt Nam",
+    "phone": "+84 34 944 6739",
+    "email": "natuong2017{'@'}gmail.com",
+    "formTitle": "Có dự án\nnào không?",
+    "formName": "Tên",
+    "formEmail": "Email",
+    "formMessage": "Tin nhắn",
+    "formSubmit": "Gửi ngay"
+  },
+  "seo": {
+    "title": "Nguyễn Anh Tường — Senior Frontend Engineer",
+    "description": "Portfolio của Nguyễn Anh Tường — Senior Frontend Engineer 8+ năm kinh nghiệm, chuyên Vue 3, React, Design System và AI Integration.",
+    "ogDescription": "Senior Frontend Engineer 8+ năm kinh nghiệm xây dựng ứng dụng web scalable."
+  }
+}
