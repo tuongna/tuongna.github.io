@@ -14,7 +14,7 @@
       </h2>
 
       <p
-        class="text-base-black mt-4xl fade-in text-[16px] leading-[1.5] font-normal tracking-[-0.03em] delay-2"
+        class="text-base-black mt-4xl fade-in text-[16px] leading-normal font-normal tracking-[-0.03em] delay-2"
       >
         {{ $t('contact.address') }}
       </p>
@@ -24,14 +24,14 @@
           href="https://github.com/tuongna"
           target="_blank"
           rel="noopener"
-          class="text-base-black text-[16px] leading-[1.5] font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
+          class="text-base-black text-[16px] leading-normal font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
           >GitHub</a
         >
         <a
           href="https://linkedin.com/in/tuongna"
           target="_blank"
           rel="noopener"
-          class="text-base-black text-[16px] leading-[1.5] font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
+          class="text-base-black text-[16px] leading-normal font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
           >LinkedIn</a
         >
       </div>
@@ -49,11 +49,9 @@
       <!-- Success Message -->
       <div
         v-if="formState === 'success'"
-        class="flex flex-col items-center justify-center py-[40px] text-center"
+        class="py-3xl flex flex-col items-center justify-center text-center"
       >
-        <div
-          class="mb-2xl flex h-[64px] w-[64px] items-center justify-center rounded-full bg-white/20"
-        >
+        <div class="mb-2xl h-6xl flex w-6xl items-center justify-center rounded-full bg-white/20">
           <svg
             viewBox="0 0 24 24"
             fill="none"
@@ -98,7 +96,7 @@
           <input
             v-model="form.name"
             type="text"
-            class="py-sm font-body w-full border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-[2px] focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
+            class="py-sm font-body w-full border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
             :placeholder="$t('contact.formName')"
             name="name"
             id="contact-name"
@@ -115,7 +113,7 @@
           <input
             v-model="form.email"
             type="email"
-            class="py-sm font-body w-full border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-[2px] focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
+            class="py-sm font-body w-full border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
             :placeholder="$t('contact.formEmail')"
             name="email"
             id="contact-email"
@@ -132,7 +130,7 @@
         >
         <textarea
           v-model="form.message"
-          class="py-sm font-body min-h-[60px] w-full resize-none border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus:border-b-black focus-visible:rounded-[2px] focus-visible:outline-[2px] focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
+          class="py-sm font-body min-h-[60px] w-full resize-none border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus:border-b-black focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
           :placeholder="$t('contact.formMessage')"
           name="message"
           rows="3"
@@ -167,13 +165,13 @@
             </span>
             <template v-else>
               <span>{{ $t('contact.formSubmit') }}</span>
-              <span class="-mr-xs flex h-[24px] w-[24px] items-center justify-center">
+              <span class="-mr-xs h-2xl flex w-2xl items-center justify-center">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
                   stroke-width="2"
-                  class="h-[16px] w-[16px]"
+                  class="h-lg w-lg"
                 >
                   <line
                     x1="7"

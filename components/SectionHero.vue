@@ -1,16 +1,16 @@
 <template>
   <section
-    class="relative flex min-h-[100vh] items-center overflow-hidden px-[24px] lg:px-[115px]"
+    class="px-2xl relative flex min-h-screen items-center overflow-hidden lg:px-[115px]"
     id="home"
   >
     <div class="relative z-10 mt-[100px] w-full lg:mt-0 xl:max-w-[70vw]">
       <p
-        class="font-body text-base-black mb-2xl fade-in text-[32px] leading-[1] font-medium tracking-[-0.03em]"
+        class="font-body text-base-black mb-2xl fade-in text-[32px] leading-none font-medium tracking-[-0.03em]"
       >
         {{ $t('hero.greeting') }}
       </p>
       <h1
-        class="font-display text-dark-alt mb-4xl fade-in text-[48px] leading-[1] font-medium uppercase delay-1 lg:text-[clamp(48px,7vw,102px)] lg:leading-[0.88]"
+        class="font-display text-dark-alt mb-4xl fade-in text-[48px] leading-none font-medium uppercase delay-1 lg:text-[clamp(48px,7vw,102px)] lg:leading-[0.88]"
       >
         {{ $t('hero.name') }}
       </h1>
@@ -42,7 +42,7 @@
         </BaseButton>
       </div>
 
-      <div class="gap-lg md:gap-4xl fade-in mt-[64px] flex flex-col delay-3 md:flex-row">
+      <div class="gap-lg md:gap-4xl fade-in mt-6xl flex flex-col delay-3 md:flex-row">
         <a
           href="https://github.com/tuongna"
           target="_blank"

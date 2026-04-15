@@ -1,6 +1,6 @@
 <template>
   <section
-    class="border-base-black/10 mt-[64px] border-t pt-[48px]"
+    class="border-base-black/10 mt-6xl pt-4xl border-t"
     aria-label="Comments"
   >
     <h2 class="mb-2xl text-base-black text-[20px] font-bold md:text-[24px]">
@@ -21,7 +21,7 @@
         loading="lazy"
       />
       <template #fallback>
-        <div class="flex items-center justify-center py-[40px]">
+        <div class="py-3xl flex items-center justify-center">
           <div
             class="border-base-black/20 border-t-brand-coral h-6 w-6 animate-spin rounded-full border-2"
           ></div>

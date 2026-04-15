@@ -1,18 +1,18 @@
 <template>
   <div
-    class="mx-auto min-h-screen max-w-[900px] px-[24px] py-[60px] md:px-[60px] md:py-[80px] lg:px-[115px] lg:py-[100px]"
+    class="px-2xl mx-auto min-h-screen max-w-[900px] py-[60px] md:px-[60px] md:py-[80px] lg:px-[115px] lg:py-[100px]"
   >
     <BaseButton
       :to="localePath('/')"
       variant="dark"
     >
-      <span class="mr-xs flex h-[24px] w-[24px] items-center justify-center">
+      <span class="mr-xs h-2xl flex w-2xl items-center justify-center">
         <svg
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
           stroke-width="2"
-          class="h-[16px] w-[16px]"
+          class="h-lg w-lg"
         >
           <polyline points="15 18 9 12 15 6" />
         </svg>

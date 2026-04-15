@@ -60,11 +60,11 @@ onMounted(async () => {
       { location: [35.68, 139.69], size: 0.04 }, // Tokyo
       { location: [1.35, 103.82], size: 0.04 }, // Singapore
     ],
-    onRender: (state) => {
+    onRender: (state: Record<string, number>) => {
       state.phi = phi
       phi += 0.003 // Slow rotation
     },
-  })
+  } as Parameters<typeof createGlobe>[1])
 })
 
 onBeforeUnmount(() => {
