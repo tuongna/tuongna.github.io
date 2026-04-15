@@ -3,18 +3,18 @@
     class="grid grid-cols-1 gap-0 md:grid-cols-2"
     id="contact"
   >
-    <div class="p-[60px_24px] md:p-[80px_60px] lg:p-[100px_80px]">
-      <p class="mb-lg fade-in text-[18px] leading-[1.33] font-semibold">
+    <div class="px-6 py-16 md:px-16 md:py-20 lg:px-20 lg:py-24">
+      <p class="mb-lg fade-in text-lg leading-snug font-semibold">
         {{ $t('contact.label') }}
       </p>
       <h2
-        class="mb-4xl fade-in text-[clamp(32px,4vw,48px)] leading-[1.17] font-bold uppercase delay-1"
+        class="mb-4xl fade-in text-[clamp(2rem,4vw,3rem)] leading-tight font-bold uppercase delay-1"
       >
         {{ $t('contact.title') }}
       </h2>
 
       <p
-        class="text-base-black mt-4xl fade-in text-[16px] leading-normal font-normal tracking-[-0.03em] delay-2"
+        class="text-base-black mt-4xl fade-in text-base leading-normal font-normal tracking-[-0.03em] delay-2"
       >
         {{ $t('contact.address') }}
       </p>
@@ -24,24 +24,24 @@
           href="https://github.com/tuongna"
           target="_blank"
           rel="noopener"
-          class="text-base-black text-[16px] leading-normal font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
+          class="text-base-black text-base leading-normal font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
           >GitHub</a
         >
         <a
           href="https://linkedin.com/in/tuongna"
           target="_blank"
           rel="noopener"
-          class="text-base-black text-[16px] leading-normal font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
+          class="text-base-black text-base leading-normal font-medium tracking-[-0.03em] uppercase no-underline transition-all duration-200 hover:opacity-60"
           >LinkedIn</a
         >
       </div>
     </div>
 
     <div
-      class="bg-gradient-brand flex flex-col justify-center p-[60px_24px] md:p-[80px_60px] lg:p-[64px_85px]"
+      class="bg-gradient-brand flex flex-col justify-center px-6 py-16 md:px-16 md:py-20 lg:px-[5.3125rem] lg:py-16"
     >
       <h3
-        class="mb-4xl text-[32px] leading-[1.2] font-bold whitespace-pre-line text-white uppercase md:text-[40px]"
+        class="mb-4xl text-4xl leading-tight font-bold whitespace-pre-line text-white uppercase md:text-5xl"
       >
         {{ $t('contact.formTitle') }}
       </h3>
@@ -57,15 +57,15 @@
             fill="none"
             stroke="white"
             stroke-width="2.5"
-            class="h-[32px] w-[32px]"
+            class="h-8 w-8"
           >
             <polyline points="20 6 9 17 4 12" />
           </svg>
         </div>
-        <p class="mb-md text-[20px] font-bold text-white">{{ $t('contact.formSuccess') }}</p>
+        <p class="mb-md text-xl font-bold text-white">{{ $t('contact.formSuccess') }}</p>
         <button
           type="button"
-          class="mt-xl cursor-pointer text-[14px] text-white/80 underline underline-offset-4 transition-colors hover:text-white"
+          class="mt-xl cursor-pointer text-sm text-white/80 underline underline-offset-4 transition-colors hover:text-white"
           @click="resetForm"
         >
           {{ $t('contact.formSendAnother') }}
@@ -96,7 +96,7 @@
           <input
             v-model="form.name"
             type="text"
-            class="py-sm font-body w-full border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
+            class="py-sm font-body w-full border-0 border-b-2 border-white bg-transparent text-base font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
             :placeholder="$t('contact.formName')"
             name="name"
             id="contact-name"
@@ -113,7 +113,7 @@
           <input
             v-model="form.email"
             type="email"
-            class="py-sm font-body w-full border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
+            class="py-sm font-body w-full border-0 border-b-2 border-white bg-transparent text-base font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
             :placeholder="$t('contact.formEmail')"
             name="email"
             id="contact-email"
@@ -130,7 +130,7 @@
         >
         <textarea
           v-model="form.message"
-          class="py-sm font-body min-h-[60px] w-full resize-none border-0 border-b-[1.5px] border-white bg-transparent text-[16px] font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus:border-b-black focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
+          class="py-sm font-body min-h-16 w-full resize-none border-0 border-b-2 border-white bg-transparent text-base font-medium text-white uppercase transition-all duration-200 outline-none placeholder:text-white/80 focus:border-b-black focus-visible:rounded-[2px] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#B238EF]"
           :placeholder="$t('contact.formMessage')"
           name="message"
           rows="3"
@@ -143,7 +143,7 @@
         <!-- Error message -->
         <p
           v-if="formState === 'error'"
-          class="px-lg py-sm rounded-lg bg-white/10 text-[14px] text-white/90"
+          class="px-lg py-sm rounded-lg bg-white/10 text-sm text-white/90"
         >
           ⚠️ {{ $t('contact.formError') }}
         </p>

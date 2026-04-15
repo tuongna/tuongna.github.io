@@ -3,7 +3,7 @@
     class="border-base-black/10 mt-6xl pt-4xl border-t"
     aria-label="Comments"
   >
-    <h2 class="mb-2xl text-base-black text-[20px] font-bold md:text-[24px]">
+    <h2 class="mb-2xl text-base-black text-xl font-bold md:text-2xl">
       {{ $t('blog.commentsTitle') }}
     </h2>
     <ClientOnly>
@@ -25,7 +25,7 @@
           <div
             class="border-base-black/20 border-t-brand-coral h-6 w-6 animate-spin rounded-full border-2"
           ></div>
-          <span class="ml-md text-base-black/60 text-[14px]">Loading comments...</span>
+          <span class="ml-md text-base-black/60 text-sm">Loading comments...</span>
         </div>
       </template>
     </ClientOnly>

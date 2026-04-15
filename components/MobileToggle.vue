@@ -7,12 +7,12 @@
     ></div>
     <!-- Toggle button -->
     <button
-      class="sidebar__toggle bg-base-black fixed top-[20px] left-[20px] z-[200] hidden h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-[8px] border-none text-white max-[900px]:flex"
+      class="sidebar__toggle bg-base-black fixed top-5 left-5 z-[200] hidden h-11 w-11 cursor-pointer items-center justify-center rounded-lg border-none text-white max-[900px]:flex"
       @click="toggleSidebar"
       :aria-label="$t('nav.toggleMenu')"
     >
       <svg
-        class="h-[24px] w-[24px]"
+        class="h-6 w-6"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"

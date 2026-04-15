@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-2xl mx-auto min-h-screen max-w-[900px] py-[60px] md:px-[60px] md:py-[80px] lg:px-[115px] lg:py-[100px]"
+    class="px-2xl mx-auto min-h-screen max-w-[56.25rem] py-16 md:px-16 md:py-20 lg:px-28 lg:py-24"
   >
     <BaseButton
       :to="localePath('/')"
@@ -22,11 +22,11 @@
 
     <article v-if="page">
       <h1
-        class="mt-4xl mb-md text-base-black text-[28px] leading-[1.17] font-bold tracking-[-0.02em] md:text-[36px] lg:text-[48px]"
+        class="mt-4xl mb-md text-base-black text-3xl leading-tight font-bold tracking-[-0.02em] md:text-4xl lg:text-5xl"
       >
         {{ page.title }}
       </h1>
-      <p class="text-base-black/80 mb-4xl text-[16px]">{{ page.displayDate || page.date }}</p>
+      <p class="text-base-black/80 mb-4xl text-base">{{ page.displayDate || page.date }}</p>
 
       <div class="prose">
         <ContentRenderer :value="page" />
@@ -37,9 +37,9 @@
 
     <div
       v-else
-      class="py-[100px] text-center"
+      class="py-24 text-center"
     >
-      <h1 class="text-[28px] font-bold md:text-[36px]">404 - Post Not Found</h1>
+      <h1 class="text-3xl font-bold md:text-4xl">404 - Post Not Found</h1>
       <div class="mt-2xl flex justify-center">
         <BaseButton
           :to="localePath('/')"

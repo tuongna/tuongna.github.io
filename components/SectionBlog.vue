@@ -1,13 +1,13 @@
 <template>
   <section
-    class="relative px-[24px] py-[100px] lg:px-[115px]"
+    class="relative px-6 py-24 lg:px-28"
     id="writing"
   >
-    <p class="mb-lg fade-in text-center text-[18px] leading-[1.33] font-semibold">
+    <p class="mb-lg fade-in text-center text-lg leading-snug font-semibold">
       {{ $t('blog.label') }}
     </p>
     <h2
-      class="mb-4xl fade-in text-center text-[clamp(32px,4vw,48px)] leading-[1.17] font-bold uppercase delay-1"
+      class="mb-4xl fade-in text-center text-[clamp(2rem,4vw,3rem)] leading-tight font-bold uppercase delay-1"
     >
       {{ $t('blog.title') }}
     </h2>
@@ -21,14 +21,14 @@
         class="gap-2xl fade-in flex flex-col text-inherit no-underline transition-all delay-2 duration-400 hover:-translate-y-1"
       >
         <div
-          class="bg-muted-05 flex h-[260px] w-full items-center justify-center bg-[linear-gradient(135deg,#FFB147_0%,#FF6C63_50%,#B86ADF_100%)] object-cover"
+          class="bg-muted-05 flex h-64 w-full items-center justify-center bg-[linear-gradient(135deg,#FFB147_0%,#FF6C63_50%,#B86ADF_100%)] object-cover"
         >
-          <span class="font-display text-[48px] font-bold text-white">JR</span>
+          <span class="font-display text-5xl font-bold text-white">JR</span>
         </div>
         <div class="gap-xl flex flex-col">
-          <time class="text-[18px] leading-[1.33] font-semibold">{{ post.date }}</time>
-          <h3 class="text-dark-text text-[24px] leading-[1.25] font-bold">{{ post.title }}</h3>
-          <div class="bg-muted-20 h-[1px] w-full"></div>
+          <time class="text-lg leading-snug font-semibold">{{ post.date }}</time>
+          <h3 class="text-dark-text text-2xl leading-tight font-bold">{{ post.title }}</h3>
+          <div class="bg-muted-20 h-px w-full"></div>
         </div>
       </NuxtLink>
 
@@ -36,13 +36,13 @@
       <div
         class="gap-2xl fade-in flex flex-col text-inherit no-underline opacity-40 transition-all delay-3 duration-400"
       >
-        <div class="bg-muted-05 h-[260px] w-full object-cover"></div>
+        <div class="bg-muted-05 h-64 w-full object-cover"></div>
         <div class="gap-xl flex flex-col">
-          <time class="text-[18px] leading-[1.33] font-semibold">{{ $t('blog.comingSoon') }}</time>
-          <h3 class="text-dark-text text-[24px] leading-[1.25] font-bold whitespace-pre-line">
+          <time class="text-lg leading-snug font-semibold">{{ $t('blog.comingSoon') }}</time>
+          <h3 class="text-dark-text text-2xl leading-tight font-bold whitespace-pre-line">
             {{ $t('blog.placeholder1') }}
           </h3>
-          <div class="bg-muted-20 h-[1px] w-full"></div>
+          <div class="bg-muted-20 h-px w-full"></div>
         </div>
       </div>
 
@@ -50,31 +50,31 @@
       <div
         class="gap-2xl fade-in flex flex-col text-inherit no-underline opacity-40 transition-all delay-4 duration-400"
       >
-        <div class="bg-muted-05 h-[260px] w-full object-cover"></div>
+        <div class="bg-muted-05 h-64 w-full object-cover"></div>
         <div class="gap-xl flex flex-col">
-          <time class="text-[18px] leading-[1.33] font-semibold">{{ $t('blog.comingSoon') }}</time>
-          <h3 class="text-dark-text text-[24px] leading-[1.25] font-bold whitespace-pre-line">
+          <time class="text-lg leading-snug font-semibold">{{ $t('blog.comingSoon') }}</time>
+          <h3 class="text-dark-text text-2xl leading-tight font-bold whitespace-pre-line">
             {{ $t('blog.placeholder2') }}
           </h3>
-          <div class="bg-muted-20 h-[1px] w-full"></div>
+          <div class="bg-muted-20 h-px w-full"></div>
         </div>
       </div>
     </div>
 
-    <div class="mt-[64px] text-center">
+    <div class="mt-6xl text-center">
       <BaseButton
         v-if="posts.length"
         :to="localePath(`/blog/${posts[0]?.slug}`)"
         class="fade-in delay-4"
       >
         <span>{{ $t('blog.readMore') }}</span>
-        <span class="-mr-xs flex h-[32px] w-[32px] items-center justify-center">
+        <span class="-mr-xs flex h-8 w-8 items-center justify-center">
           <svg
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             stroke-width="2"
-            class="h-[16px] w-[16px]"
+            class="h-4 w-4"
           >
             <line
               x1="7"

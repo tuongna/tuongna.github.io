@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="bg-base-black ease w-sidebar fixed top-0 left-0 z-100 flex h-screen flex-col justify-between border-r border-white/10 p-[56px_48px] transition-transform duration-300 max-[900px]:-translate-x-full max-[900px]:[&.open]:translate-x-0"
+    class="bg-base-black ease w-sidebar fixed top-0 left-0 z-100 flex h-screen flex-col justify-between border-r border-white/10 px-12 py-14 transition-transform duration-300 max-[900px]:-translate-x-full max-[900px]:[&.open]:translate-x-0"
     :id="'sidebar'"
   >
     <!-- Logo -->
@@ -24,28 +24,28 @@
         <template v-if="isHomePage">
           <a
             href="#home"
-            class="font-body text-center text-[20px] leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
             :class="activeSection === 'home' ? 'font-bold opacity-100' : 'font-normal opacity-70'"
             @click="closeSidebar"
             >{{ $t('nav.home') }}</a
           >
           <a
             href="#about"
-            class="font-body text-center text-[20px] leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
             :class="activeSection === 'about' ? 'font-bold opacity-100' : 'font-normal opacity-70'"
             @click="closeSidebar"
             >{{ $t('nav.about') }}</a
           >
           <a
             href="#skills"
-            class="font-body text-center text-[20px] leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
             :class="activeSection === 'skills' ? 'font-bold opacity-100' : 'font-normal opacity-70'"
             @click="closeSidebar"
             >{{ $t('nav.skills') }}</a
           >
           <a
             href="#writing"
-            class="font-body text-center text-[20px] leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
             :class="
               activeSection === 'writing' ? 'font-bold opacity-100' : 'font-normal opacity-70'
             "
@@ -54,7 +54,7 @@
           >
           <a
             href="#contact"
-            class="font-body text-center text-[20px] leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal text-white uppercase no-underline transition-all duration-200 hover:opacity-100"
             :class="
               activeSection === 'contact' ? 'font-bold opacity-100' : 'font-normal opacity-70'
             "
@@ -65,31 +65,31 @@
         <template v-else>
           <NuxtLink
             :to="localePath('/')"
-            class="font-body text-center text-[20px] leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
             @click="closeSidebar"
             >{{ $t('nav.home') }}</NuxtLink
           >
           <NuxtLink
             :to="localePath('/') + '#about'"
-            class="font-body text-center text-[20px] leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
             @click="closeSidebar"
             >{{ $t('nav.about') }}</NuxtLink
           >
           <NuxtLink
             :to="localePath('/') + '#skills'"
-            class="font-body text-center text-[20px] leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
             @click="closeSidebar"
             >{{ $t('nav.skills') }}</NuxtLink
           >
           <NuxtLink
             :to="localePath('/') + '#writing'"
-            class="font-body text-center text-[20px] leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
             @click="closeSidebar"
             >{{ $t('nav.blog') }}</NuxtLink
           >
           <NuxtLink
             :to="localePath('/') + '#contact'"
-            class="font-body text-center text-[20px] leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
+            class="font-body text-center text-xl leading-normal font-normal text-white uppercase no-underline opacity-70 transition-all duration-200 hover:opacity-100"
             @click="closeSidebar"
             >{{ $t('nav.contact') }}</NuxtLink
           >
@@ -163,7 +163,7 @@
           v-for="loc in locales"
           :key="loc.code"
           :to="switchLocalePath(loc.code)"
-          class="px-md rounded-[4px] bg-transparent py-[6px] text-[13px] font-semibold text-white/70 no-underline transition-all duration-200 hover:text-white"
+          class="px-md rounded-[4px] bg-transparent py-1.5 text-sm font-semibold text-white/70 no-underline transition-all duration-200 hover:text-white"
           :class="{ 'bg-white/15 text-white!': locale === loc.code }"
         >
           {{ loc.code.toUpperCase() }}
@@ -171,7 +171,7 @@
       </nav>
 
       <div
-        class="flex items-center justify-center gap-1 text-center text-[16px] leading-snug font-normal text-white opacity-70"
+        class="flex items-center justify-center gap-1 text-center text-base leading-snug font-normal text-white opacity-70"
       >
         <svg
           viewBox="0 0 24 24"

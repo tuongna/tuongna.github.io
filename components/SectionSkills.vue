@@ -1,11 +1,11 @@
 <template>
   <section
-    class="relative px-[24px] py-[100px] lg:px-[115px]"
+    class="relative px-6 py-24 lg:px-28"
     id="skills"
   >
-    <p class="mb-lg fade-in text-[18px] leading-[1.33] font-semibold">{{ $t('skills.label') }}</p>
+    <p class="mb-lg fade-in text-lg leading-snug font-semibold">{{ $t('skills.label') }}</p>
     <h2
-      class="mb-4xl fade-in text-[clamp(32px,4vw,48px)] leading-[1.17] font-bold uppercase delay-1"
+      class="mb-4xl fade-in text-[clamp(2rem,4vw,3rem)] leading-tight font-bold uppercase delay-1"
     >
       {{ $t('skills.title') }}
     </h2>
@@ -17,10 +17,10 @@
         class="gap-lg py-2xl border-muted-20 hover:pl-lg group fade-in flex cursor-default flex-col items-start border-b transition-all delay-2 duration-400 lg:flex-row lg:items-center lg:justify-between"
       >
         <span
-          class="text-[clamp(24px,3vw,32px)] leading-snug font-bold uppercase lg:min-w-[280px]"
+          class="text-[clamp(1.5rem,3vw,2rem)] leading-snug font-bold uppercase lg:min-w-[280px]"
           >{{ item.name }}</span
         >
-        <span class="text-muted-80 flex-1 text-base leading-relaxed lg:max-w-[545px]">
+        <span class="text-muted-80 flex-1 text-base leading-relaxed lg:max-w-[34.0625rem]">
           <span
             class="text-base-black after:text-muted-80 font-medium after:font-normal after:content-['_\—_']"
             >{{ item.tech }}</span

@@ -6,7 +6,7 @@ import { NuxtLink } from '#components'
 import { cn } from '~/utils/cn'
 
 const buttonVariants = cva(
-  'inline-flex justify-center items-center gap-xs px-[40px] h-[56px] font-body text-[18px] font-medium leading-[1.33] no-underline border-none cursor-pointer transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-[2px] hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)]',
+  'inline-flex justify-center items-center gap-xs px-10 h-14 font-body text-lg font-medium leading-snug no-underline border-none cursor-pointer transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)] hover:-translate-y-0.5 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)]',
   {
     variants: {
       variant: {

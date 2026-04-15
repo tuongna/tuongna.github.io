@@ -1,16 +1,16 @@
 <template>
   <section
-    class="px-2xl relative flex min-h-screen items-center overflow-hidden lg:px-[115px]"
+    class="px-2xl relative flex min-h-screen items-center overflow-hidden lg:px-28"
     id="home"
   >
-    <div class="relative z-10 mt-[100px] w-full lg:mt-0 xl:max-w-[70vw]">
+    <div class="relative z-10 mt-24 w-full lg:mt-0 xl:max-w-[70vw]">
       <p
-        class="font-body text-base-black mb-2xl fade-in text-[32px] leading-none font-medium tracking-[-0.03em]"
+        class="font-body text-base-black mb-2xl fade-in text-4xl leading-none font-medium tracking-[-0.03em]"
       >
         {{ $t('hero.greeting') }}
       </p>
       <h1
-        class="font-display text-dark-alt mb-4xl fade-in text-[48px] leading-none font-medium uppercase delay-1 lg:text-[clamp(48px,7vw,102px)] lg:leading-[0.88]"
+        class="font-display text-dark-alt mb-4xl fade-in text-5xl leading-none font-medium uppercase delay-1 lg:text-[clamp(3rem,7vw,6.375rem)] lg:leading-[0.88]"
       >
         {{ $t('hero.name') }}
       </h1>
@@ -61,7 +61,7 @@
               />
             </svg>
           </div>
-          <span class="text-base-black text-[14px] leading-[1.43] font-normal">GitHub</span>
+          <span class="text-base-black text-sm leading-snug font-normal">GitHub</span>
         </a>
         <a
           href="https://linkedin.com/in/tuongna"
@@ -81,7 +81,7 @@
               />
             </svg>
           </div>
-          <span class="text-base-black text-[14px] leading-[1.43] font-normal">LinkedIn</span>
+          <span class="text-base-black text-sm leading-snug font-normal">LinkedIn</span>
         </a>
       </div>
     </div>

@@ -2,7 +2,7 @@
   <div class="relative flex min-h-screen">
     <a
       href="#main-content"
-      class="absolute -top-[40px] left-0 z-[100] bg-[#B86ADF] p-[8px] font-semibold text-white no-underline transition-[top] duration-200 ease-out focus:top-0 focus:outline-[2px] focus:outline-offset-[2px] focus:outline-[#FFB147]"
+      class="absolute -top-10 left-0 z-[100] bg-[#B86ADF] p-2 font-semibold text-white no-underline transition-[top] duration-200 ease-out focus:top-0 focus:outline-2 focus:outline-offset-2 focus:outline-[#FFB147]"
       >{{ $t('nav.skipToContent') }}</a
     >
     <AppSidebar />
