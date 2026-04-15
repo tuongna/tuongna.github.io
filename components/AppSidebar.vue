@@ -1,6 +1,6 @@
 <template>
   <aside
-    class="bg-base-black ease w-sidebar fixed top-0 left-0 z-100 flex h-screen flex-col justify-between border-r border-white/10 px-12 py-14 transition-transform duration-300 max-[900px]:-translate-x-full max-[900px]:[&.open]:translate-x-0"
+    class="bg-base-black ease w-sidebar fixed top-0 left-0 z-100 flex h-screen flex-col justify-between border-r border-white/10 px-8 py-14 transition-transform duration-300 max-[900px]:-translate-x-full max-[900px]:[&.open]:translate-x-0"
     :id="'sidebar'"
   >
     <!-- Logo -->

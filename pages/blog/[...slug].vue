@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="px-2xl mx-auto min-h-screen max-w-[56.25rem] py-16 md:px-16 md:py-20 lg:px-28 lg:py-24"
-  >
+  <div class="px-2xl mx-auto min-h-screen max-w-225 py-16 md:px-16 md:py-20 lg:px-28 lg:py-24">
     <BaseButton
       :to="localePath('/')"
       variant="dark"

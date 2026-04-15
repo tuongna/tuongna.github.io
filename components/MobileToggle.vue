@@ -2,12 +2,12 @@
   <div>
     <!-- Overlay backdrop -->
     <div
-      class="sidebar-overlay fixed inset-0 z-[90] hidden bg-black/50 [&.active]:block"
+      class="sidebar-overlay fixed inset-0 z-90 hidden bg-black/50 [&.active]:block"
       @click="closeSidebar"
     ></div>
     <!-- Toggle button -->
     <button
-      class="sidebar__toggle bg-base-black fixed top-5 left-5 z-[200] hidden h-11 w-11 cursor-pointer items-center justify-center rounded-lg border-none text-white max-[900px]:flex"
+      class="sidebar__toggle bg-base-black fixed top-5 left-5 z-200 hidden h-11 w-11 cursor-pointer items-center justify-center rounded-lg border-none text-white max-[900px]:flex"
       @click="toggleSidebar"
       :aria-label="$t('nav.toggleMenu')"
     >

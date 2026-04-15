@@ -1,6 +1,6 @@
 <template>
   <section
-    class="relative grid grid-cols-1 gap-0 !p-0 xl:grid-cols-2"
+    class="relative grid grid-cols-1 gap-0 p-0! xl:grid-cols-2"
     id="about"
   >
     <div class="gap-3xl flex flex-col bg-white px-6 py-16 md:px-16 md:py-20 xl:px-20 xl:py-24">

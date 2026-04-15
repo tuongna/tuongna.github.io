@@ -20,7 +20,7 @@
           class="text-[clamp(1.5rem,3vw,2rem)] leading-snug font-bold uppercase lg:min-w-[280px]"
           >{{ item.name }}</span
         >
-        <span class="text-muted-80 flex-1 text-base leading-relaxed lg:max-w-[34.0625rem]">
+        <span class="text-muted-80 flex-1 text-base leading-relaxed lg:max-w-136.25">
           <span
             class="text-base-black after:text-muted-80 font-medium after:font-normal after:content-['_\—_']"
             >{{ item.tech }}</span

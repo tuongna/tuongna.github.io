@@ -38,7 +38,7 @@
     </div>
 
     <div
-      class="bg-gradient-brand flex flex-col justify-center px-6 py-16 md:px-16 md:py-20 lg:px-[5.3125rem] lg:py-16"
+      class="bg-gradient-brand flex flex-col justify-center px-6 py-16 md:px-16 md:py-20 lg:px-21.25 lg:py-16"
     >
       <h3
         class="mb-4xl text-4xl leading-tight font-bold whitespace-pre-line text-white uppercase md:text-5xl"
