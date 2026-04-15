@@ -148,13 +148,17 @@ onMounted(async () => {
     theta,
     context: { alpha: false, powerPreference: 'high-performance' } as WebGLContextAttributes,
 
-    // alpha:false = opaque canvas. dark=1 = dark ocean, land dots bright.
-    // baseColor = land dot color. With mapBrightness:6, land = bright gray/white dots.
+    // World map texture is injected externally via requestAnimationFrame below
+    // (bypasses Cobe's embedded base64 which fails in AMD/ANGLE on Windows).
+    // dark:1  = dark ocean, bright land dots
+    // mapBaseBrightness:0 = maximum land/ocean contrast
+    // mapBrightness:8 = land dots clearly visible
     dark: 1,
     diffuse: 1.2,
     mapSamples: 16000,
-    mapBrightness: 6,
-    baseColor: [0.4, 0.35, 0.5], // Purple-tinted gray land dots
+    mapBrightness: 8,
+    mapBaseBrightness: 0,
+    baseColor: [0.45, 0.4, 0.6], // Purple-slate land dots
     markerColor: [1, 0.42, 0.39], // Brand coral #FF6C63
     glowColor: [0.55, 0.22, 0.78], // Brand purple glow
     arcColor: [1, 0.7, 0.42], // Warm amber arcs
@@ -172,6 +176,30 @@ onMounted(async () => {
       state.theta = theta
     },
   } as Parameters<typeof createGlobe>[1])
+
+  // Inject external world map texture to replace Cobe's embedded data: URI.
+  // This works around a browser issue where the embedded base64 PNG
+  // fails to load via Image() in some environments (AMD/ANGLE on Windows).
+  // We wait one frame for Cobe to bind its WebGL context, then override
+  // the texture binding on unit 0 with our hosted PNG.
+  requestAnimationFrame(() => {
+    const gl =
+      canvas.getContext('webgl') || (canvas.getContext('webgl2') as WebGLRenderingContext | null)
+    if (!gl) return
+
+    const tex = gl.createTexture()
+    const img = new Image()
+    img.onload = () => {
+      gl.bindTexture(gl.TEXTURE_2D, tex)
+      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, img)
+      gl.generateMipmap(gl.TEXTURE_2D)
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST)
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST)
+      gl.activeTexture(gl.TEXTURE0)
+      gl.bindTexture(gl.TEXTURE_2D, tex)
+    }
+    img.src = '/world-map.png'
+  })
 })
 
 onBeforeUnmount(() => {
