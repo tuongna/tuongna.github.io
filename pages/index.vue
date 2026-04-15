@@ -27,9 +27,6 @@ useSeoMeta({
   twitterImage: `${siteUrl}/og-image.png`,
 })
 
-
-
-
 useHead({
   script: [
     {
@@ -43,14 +40,14 @@ useHead({
           alternateName: 'Nguyễn Anh Tường',
           jobTitle: 'Senior Frontend Engineer',
           url: siteUrl,
-          sameAs: [
-            'https://github.com/tuongna',
-            'https://linkedin.com/in/tuongna',
-          ],
-          email: 'natuong2017@gmail.com',
+          sameAs: ['https://github.com/tuongna', 'https://linkedin.com/in/tuongna'],
           knowsAbout: ['Vue 3', 'React', 'TypeScript', 'Design System', 'AI Integration'],
           worksFor: { '@type': 'Organization', name: 'Smilegate Vietnam' },
-          address: { '@type': 'PostalAddress', addressLocality: 'Ho Chi Minh City', addressCountry: 'VN' },
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Ho Chi Minh City',
+            addressCountry: 'VN',
+          },
         },
       }),
     },

@@ -1,13 +1,42 @@
 <template>
   <div>
     <!-- Overlay backdrop -->
-    <div class="sidebar-overlay hidden fixed inset-0 bg-black/50 z-[90] [&.active]:block" @click="closeSidebar"></div>
+    <div
+      class="sidebar-overlay fixed inset-0 z-[90] hidden bg-black/50 [&.active]:block"
+      @click="closeSidebar"
+    ></div>
     <!-- Toggle button -->
-    <button class="sidebar__toggle hidden max-[900px]:flex fixed top-[20px] left-[20px] z-[200] w-[44px] h-[44px] bg-base-black border-none rounded-[8px] cursor-pointer items-center justify-center text-white" @click="toggleSidebar" :aria-label="$t('nav.toggleMenu')">
-      <svg class="w-[24px] h-[24px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <line x1="3" y1="12" x2="21" y2="12"/>
-        <line x1="3" y1="18" x2="21" y2="18"/>
+    <button
+      class="sidebar__toggle bg-base-black fixed top-[20px] left-[20px] z-[200] hidden h-[44px] w-[44px] cursor-pointer items-center justify-center rounded-[8px] border-none text-white max-[900px]:flex"
+      @click="toggleSidebar"
+      :aria-label="$t('nav.toggleMenu')"
+    >
+      <svg
+        class="h-[24px] w-[24px]"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        aria-hidden="true"
+      >
+        <line
+          x1="3"
+          y1="6"
+          x2="21"
+          y2="6"
+        />
+        <line
+          x1="3"
+          y1="12"
+          x2="21"
+          y2="12"
+        />
+        <line
+          x1="3"
+          y1="18"
+          x2="21"
+          y2="18"
+        />
       </svg>
     </button>
   </div>

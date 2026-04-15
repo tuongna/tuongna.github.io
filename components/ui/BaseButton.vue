@@ -12,13 +12,13 @@ const buttonVariants = cva(
       variant: {
         dark: 'bg-base-black text-white',
         white: 'bg-white text-base-black',
-        gradient: 'bg-gradient-brand text-white'
-      }
+        gradient: 'bg-gradient-brand text-white',
+      },
     },
     defaultVariants: {
-      variant: 'dark'
-    }
-  }
+      variant: 'dark',
+    },
+  },
 )
 
 type ButtonVariants = VariantProps<typeof buttonVariants>
@@ -33,7 +33,7 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   as: 'button',
-  variant: 'dark'
+  variant: 'dark',
 })
 
 const resolvedComponent = computed(() => {
@@ -44,10 +44,10 @@ const resolvedComponent = computed(() => {
 </script>
 
 <template>
-  <component 
-    :is="resolvedComponent" 
-    :href="href" 
-    :to="to" 
+  <component
+    :is="resolvedComponent"
+    :href="href"
+    :to="to"
     :class="cn(buttonVariants({ variant }), props.class)"
   >
     <slot />

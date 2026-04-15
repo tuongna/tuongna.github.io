@@ -17,9 +17,7 @@
   "hero": {
     "greeting": "Senior Frontend Engineer — Vietnam",
     "name": "Nguyen\nAnh\nTuong",
-    "cta": "Let's talk with me",
-    "phone": "+84 34 944 6739",
-    "email": "natuong2017{'@'}gmail.com"
+    "cta": "Let's talk with me"
   },
   "about": {
     "label": "Nice to meet you!",
@@ -47,10 +45,26 @@
     "label": "Service",
     "title": "My Specialties",
     "items": [
-      { "name": "Frontend Core", "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS", "desc": "building modern, scalable and responsive interfaces." },
-      { "name": "Design System", "tech": "Storybook, Component Library Architecture", "desc": "building reusable component systems across multiple products." },
-      { "name": "AI Integration", "tech": "LLM Agent, Google AI Studio, WebAssembly inference", "desc": "integrating AI into real-world applications." },
-      { "name": "Backend & Infra", "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform", "desc": "solid backend and infrastructure." }
+      {
+        "name": "Frontend Core",
+        "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS",
+        "desc": "building modern, scalable and responsive interfaces."
+      },
+      {
+        "name": "Design System",
+        "tech": "Storybook, Component Library Architecture",
+        "desc": "building reusable component systems across multiple products."
+      },
+      {
+        "name": "AI Integration",
+        "tech": "LLM Agent, Google AI Studio, WebAssembly inference",
+        "desc": "integrating AI into real-world applications."
+      },
+      {
+        "name": "Backend & Infra",
+        "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform",
+        "desc": "solid backend and infrastructure."
+      }
     ]
   },
   "blog": {
@@ -61,20 +75,27 @@
     "placeholder1": "Next\narticle...",
     "placeholder2": "In\nprogress...",
     "posts": [
-      { "date": "April, 2026", "title": "To the Junior Dev\nGeneration: Don't Give Up", "slug": "junior-dev-letter" }
-    ]
+      {
+        "date": "April, 2026",
+        "title": "To the Junior Dev\nGeneration: Don't Give Up",
+        "slug": "junior-dev-letter"
+      }
+    ],
+    "commentsTitle": "Comments"
   },
   "contact": {
     "label": "Contact",
     "title": "Reach out me",
     "address": "Ho Chi Minh City, Vietnam",
-    "phone": "+84 34 944 6739",
-    "email": "natuong2017{'@'}gmail.com",
-    "formTitle": "Any\nproject?",
+    "formTitle": "Let's\nconnect!",
     "formName": "Name",
     "formEmail": "Email",
     "formMessage": "Message",
-    "formSubmit": "Submit now"
+    "formSubmit": "Submit now",
+    "formSending": "Sending...",
+    "formSuccess": "Thank you! Your message has been sent successfully.",
+    "formError": "Something went wrong. Please try again.",
+    "formSendAnother": "Send another message"
   },
   "seo": {
     "title": "Nguyen Anh Tuong — Senior Frontend Engineer",

@@ -2,6 +2,7 @@
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
+  <UmamiAnalytics />
 </template>
 
 <script setup>

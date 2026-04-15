@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* ============================================
    Design Tokens — Migrated from portfolio.css
@@ -11,9 +11,9 @@
   /* Custom brand colors */
   --color-dark-alt: #060200;
   --color-dark-text: #191917;
-  --color-brand-orange: #FFB147;
-  --color-brand-coral: #FF6C63;
-  --color-brand-purple: #B86ADF;
+  --color-brand-orange: #ffb147;
+  --color-brand-coral: #ff6c63;
+  --color-brand-purple: #b86adf;
   --color-base-black: #141313;
 
   /* Opacity variants of base-black — use 'muted' prefix 
@@ -25,7 +25,7 @@
 
   /* Fonts */
   --font-display: 'Poppins', sans-serif;
-  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-serif: 'IBM Plex Serif', Georgia, serif;
   --font-mono: 'Jost', sans-serif;
 
@@ -49,25 +49,31 @@
    so gradients need custom @utility directives.
    ============================================ */
 @utility bg-gradient-brand {
-  background: linear-gradient(-87deg,
+  background: linear-gradient(
+    -87deg,
     rgba(255, 177, 71, 1) 6%,
     rgba(255, 108, 99, 1) 51%,
-    rgba(184, 106, 223, 1) 92%);
+    rgba(184, 106, 223, 1) 92%
+  );
 }
 
 @utility bg-gradient-line {
-  background: linear-gradient(90deg,
+  background: linear-gradient(
+    90deg,
     rgba(255, 177, 71, 1) 0%,
     rgba(255, 108, 99, 1) 50%,
-    rgba(184, 106, 223, 1) 100%);
+    rgba(184, 106, 223, 1) 100%
+  );
 }
 
 /* Gradient text utility for stat numbers */
 @utility text-gradient-brand {
-  background: linear-gradient(-87deg,
+  background: linear-gradient(
+    -87deg,
     rgba(255, 177, 71, 1) 6%,
     rgba(255, 108, 99, 1) 51%,
-    rgba(184, 106, 223, 1) 92%);
+    rgba(184, 106, 223, 1) 92%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -79,14 +85,14 @@
    of --color-* and --spacing-* patterns.
    ============================================ */
 :root {
-  --portfolio-white: #FFFFFF;
+  --portfolio-white: #ffffff;
   --portfolio-black: #141313;
   --portfolio-dark-alt: #060200;
   --portfolio-dark-text: #191917;
 
-  --portfolio-brand-orange: #FFB147;
-  --portfolio-brand-coral: #FF6C63;
-  --portfolio-brand-purple: #B86ADF;
+  --portfolio-brand-orange: #ffb147;
+  --portfolio-brand-coral: #ff6c63;
+  --portfolio-brand-purple: #b86adf;
 
   --portfolio-black-80: rgba(20, 19, 19, 0.8);
   --portfolio-black-20: rgba(20, 19, 19, 0.2);
@@ -105,14 +111,17 @@
   --portfolio-spacing-6xl: 64px;
 
   --portfolio-font-display: 'Poppins', sans-serif;
-  --portfolio-font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --portfolio-font-body:
+    'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --portfolio-font-serif: 'IBM Plex Serif', Georgia, serif;
   --portfolio-font-mono: 'Jost', sans-serif;
 
-  --gradient-brand: linear-gradient(-87deg,
-      rgba(255, 177, 71, 1) 6%,
-      rgba(255, 108, 99, 1) 51%,
-      rgba(184, 106, 223, 1) 92%);
+  --gradient-brand: linear-gradient(
+    -87deg,
+    rgba(255, 177, 71, 1) 6%,
+    rgba(255, 108, 99, 1) 51%,
+    rgba(184, 106, 223, 1) 92%
+  );
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   --transition-fast: all 0.2s ease;
 }
@@ -125,9 +134,15 @@ html {
 }
 
 body {
-  background: #FFFFFF;
+  background: #ffffff;
   color: #141313;
-  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family:
+    'IBM Plex Sans',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -156,8 +171,6 @@ img {
   border: 0;
 }
 
-
-
 /* ============================================
    Sections
    ============================================ */
@@ -168,12 +181,12 @@ img {
 
 .section--dark {
   background: #141313;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .section--gradient {
   background: var(--gradient-brand);
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .section__label {
@@ -190,16 +203,6 @@ img {
   text-transform: uppercase;
   margin-bottom: 48px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* ============================================
    Animations
@@ -239,7 +242,6 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-
   .fade-in,
   .slide-in {
     animation: none;
@@ -426,7 +428,7 @@ img {
 
 .prose pre {
   background: #141313;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 1.5rem;
   border-radius: 8px;
   overflow-x: auto;
@@ -576,7 +578,7 @@ img {
   margin: 1rem 0 1.5rem;
   font-size: 16px;
   font-weight: 500;
-  border-left: 3px solid #FFB147;
+  border-left: 3px solid #ffb147;
 }
 
 .prose .footnotes {
@@ -605,8 +607,6 @@ img {
   color: var(--color-black-80);
   font-style: italic;
 }
-
-
 
 @media (max-width: 600px) {
   .prose {

@@ -1,9 +1,17 @@
 <template>
-  <div class="flex min-h-screen relative">
-    <a href="#main-content" class="absolute -top-[40px] left-0 bg-[#B86ADF] text-white p-[8px] z-[100] transition-[top] duration-200 ease-out no-underline font-semibold focus:top-0 focus:outline-[2px] focus:outline-[#FFB147] focus:outline-offset-[2px]">{{ $t('nav.skipToContent') }}</a>
+  <div class="relative flex min-h-screen">
+    <a
+      href="#main-content"
+      class="absolute -top-[40px] left-0 z-[100] bg-[#B86ADF] p-[8px] font-semibold text-white no-underline transition-[top] duration-200 ease-out focus:top-0 focus:outline-[2px] focus:outline-offset-[2px] focus:outline-[#FFB147]"
+      >{{ $t('nav.skipToContent') }}</a
+    >
     <AppSidebar />
     <MobileToggle />
-    <main id="main-content" class="flex-1 ml-sidebar max-[900px]:ml-0 focus:outline-none" tabindex="-1">
+    <main
+      id="main-content"
+      class="ml-sidebar flex-1 focus:outline-none max-[900px]:ml-0"
+      tabindex="-1"
+    >
       <slot />
     </main>
   </div>

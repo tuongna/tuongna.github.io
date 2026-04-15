@@ -8,16 +8,24 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@giscus/vue": "^3.1.1",
     "@nuxt/content": "^3.12.0",
     "@nuxtjs/i18n": "^10.2.4",
     "@tailwindcss/vite": "^4.2.2",
     "better-sqlite3": "^12.8.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "cobe": "^2.0.1",
     "nuxt": "^4.4.2",
     "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   }
 }

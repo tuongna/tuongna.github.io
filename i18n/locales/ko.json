@@ -17,9 +17,7 @@
   "hero": {
     "greeting": "시니어 프론트엔드 엔지니어 — 베트남",
     "name": "Nguyen\nAnh\nTuong",
-    "cta": "연락하기",
-    "phone": "+84 34 944 6739",
-    "email": "natuong2017{'@'}gmail.com"
+    "cta": "연락하기"
   },
   "about": {
     "label": "만나서 반갑습니다!",
@@ -37,7 +35,11 @@
       "productsLabel": "운영 중인\n제품"
     },
     "experience": [
-      { "role": "프론트엔드 엔지니어", "company": "Smilegate Vietnam", "date": "2024년 9월 – 현재" },
+      {
+        "role": "프론트엔드 엔지니어",
+        "company": "Smilegate Vietnam",
+        "date": "2024년 9월 – 현재"
+      },
       { "role": "프론트엔드 개발자", "company": "Clik JSC", "date": "2022년 8월 – 2024년 9월" },
       { "role": "프론트엔드 개발자", "company": "FPT Software", "date": "2018년 4월 – 2022년 8월" },
       { "role": "프론트엔드 개발자", "company": "LacViet", "date": "2017년 7월 – 2018년 4월" }
@@ -47,10 +49,26 @@
     "label": "서비스",
     "title": "전문 기술",
     "items": [
-      { "name": "Frontend Core", "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS", "desc": "현대적이고 확장 가능한 반응형 인터페이스 구축." },
-      { "name": "Design System", "tech": "Storybook, Component Library Architecture", "desc": "여러 제품에 걸쳐 재사용 가능한 컴포넌트 시스템 구축." },
-      { "name": "AI Integration", "tech": "LLM Agent, Google AI Studio, WebAssembly inference", "desc": "실제 애플리케이션에 AI 통합." },
-      { "name": "Backend & Infra", "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform", "desc": "견고한 백엔드 및 인프라." }
+      {
+        "name": "Frontend Core",
+        "tech": "Vue 3 / Nuxt, ReactJS / NextJS, TypeScript, Tailwind CSS",
+        "desc": "현대적이고 확장 가능한 반응형 인터페이스 구축."
+      },
+      {
+        "name": "Design System",
+        "tech": "Storybook, Component Library Architecture",
+        "desc": "여러 제품에 걸쳐 재사용 가능한 컴포넌트 시스템 구축."
+      },
+      {
+        "name": "AI Integration",
+        "tech": "LLM Agent, Google AI Studio, WebAssembly inference",
+        "desc": "실제 애플리케이션에 AI 통합."
+      },
+      {
+        "name": "Backend & Infra",
+        "tech": "Java, Spring Boot, NodeJS, Docker, GCP, Kubernetes, Terraform",
+        "desc": "견고한 백엔드 및 인프라."
+      }
     ]
   },
   "blog": {
@@ -61,20 +79,27 @@
     "placeholder1": "다음\n글...",
     "placeholder2": "준비\n중...",
     "posts": [
-      { "date": "2026년 4월", "title": "주니어 개발자에게:\n포기하지 마세요", "slug": "junior-dev-letter" }
-    ]
+      {
+        "date": "2026년 4월",
+        "title": "주니어 개발자에게:\n포기하지 마세요",
+        "slug": "junior-dev-letter"
+      }
+    ],
+    "commentsTitle": "댓글"
   },
   "contact": {
     "label": "연락처",
     "title": "연락 주세요",
     "address": "호치민 시, 베트남",
-    "phone": "+84 34 944 6739",
-    "email": "natuong2017{'@'}gmail.com",
-    "formTitle": "프로젝트가\n있으신가요?",
+    "formTitle": "함께\n소통해요!",
     "formName": "이름",
     "formEmail": "이메일",
     "formMessage": "메시지",
-    "formSubmit": "보내기"
+    "formSubmit": "보내기",
+    "formSending": "전송 중...",
+    "formSuccess": "감사합니다! 메시지가 성공적으로 전송되었습니다.",
+    "formError": "문제가 발생했습니다. 다시 시도해 주세요.",
+    "formSendAnother": "다른 메시지 보내기"
   },
   "seo": {
     "title": "응웬 아인 뜨엉 — 시니어 프론트엔드 엔지니어",

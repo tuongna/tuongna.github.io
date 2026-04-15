@@ -17,6 +17,18 @@ export default defineNuxtConfig({
       meta: [
         { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' },
         { name: 'referrer', content: 'strict-origin-when-cross-origin' },
+        {
+          'http-equiv': 'Content-Security-Policy',
+          content: [
+            "default-src 'self'",
+            "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cloud.umami.is",
+            "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+            "font-src 'self' https://fonts.gstatic.com",
+            'frame-src https://giscus.app',
+            "img-src 'self' data: https:",
+            "connect-src 'self' https://formspree.io https://cloud.umami.is",
+          ].join('; '),
+        },
       ],
     },
   },
@@ -37,6 +49,14 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+  },
+
+  runtimeConfig: {
+    public: {
+      umamiHost: process.env.NUXT_PUBLIC_UMAMI_HOST || 'https://cloud.umami.is/script.js',
+      umamiWebsiteId:
+        process.env.NUXT_PUBLIC_UMAMI_WEBSITE_ID || '2ef3ce90-4a12-4319-8902-cd0ee3baf9db',
+    },
   },
 
   nitro: {
