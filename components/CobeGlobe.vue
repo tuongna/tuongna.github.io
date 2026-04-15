@@ -7,6 +7,7 @@
     <canvas
       ref="canvasRef"
       class="cobe-canvas"
+      :class="{ 'cobe-canvas--ready': globeReady }"
       aria-hidden="true"
     />
     <!-- Location label tooltip -->
@@ -28,6 +29,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 const canvasRef = ref<HTMLCanvasElement | null>(null)
 const containerRef = ref<HTMLDivElement | null>(null)
 const activeLabel = ref<string | null>(null)
+const globeReady = ref(false)
 let globeInstance: ReturnType<typeof import('cobe').default> | null = null
 let phi = 0
 let theta = 0
@@ -197,6 +199,8 @@ onMounted(async () => {
       gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST)
       gl.activeTexture(gl.TEXTURE0)
       gl.bindTexture(gl.TEXTURE_2D, tex)
+      // Fade in once texture is bound and landmasses are visible
+      globeReady.value = true
     }
     img.src = '/world-map.png'
   })
@@ -240,6 +244,12 @@ onBeforeUnmount(() => {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.cobe-canvas--ready {
+  opacity: 1;
 }
 
 /* ── Location label ── */
