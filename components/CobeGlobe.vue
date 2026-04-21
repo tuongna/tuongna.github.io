@@ -41,6 +41,7 @@ let thetaAtDown = 0
 let currentSize = 0
 let isHovering = false
 let labelTimeout: ReturnType<typeof setTimeout> | null = null
+let readyFallbackTimeout: ReturnType<typeof setTimeout> | null = null
 
 // Locations with display labels  (as const → tuple types required by Cobe)
 const HCM_LAT = 10.82
@@ -202,8 +203,17 @@ onMounted(async () => {
       // Fade in once texture is bound and landmasses are visible
       globeReady.value = true
     }
+    img.onerror = () => {
+      // Avoid keeping canvas invisible if texture file fails to load
+      globeReady.value = true
+    }
     img.src = '/world-map.png'
   })
+
+  // Fallback: always show globe even if external texture handshake fails
+  readyFallbackTimeout = setTimeout(() => {
+    globeReady.value = true
+  }, 1200)
 })
 
 onBeforeUnmount(() => {
@@ -220,6 +230,7 @@ onBeforeUnmount(() => {
     container.removeEventListener('pointerleave', onPointerLeave)
   }
   if (labelTimeout) clearTimeout(labelTimeout)
+  if (readyFallbackTimeout) clearTimeout(readyFallbackTimeout)
 })
 </script>
 
