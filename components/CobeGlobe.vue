@@ -117,14 +117,6 @@ onMounted(async () => {
   const container = containerRef.value
   if (!canvas || !container) return
 
-  // Force opaque WebGL context: Cobe's canvas has alpha:true by default,
-  // which causes it to composite onto white page background making
-  // land dots invisible. With alpha:false, canvas gets its own opaque background.
-  const ctx = canvas.getContext('webgl', { alpha: false, powerPreference: 'high-performance' })
-  if (!ctx) {
-    canvas.getContext('webgl2', { alpha: false, powerPreference: 'high-performance' })
-  }
-
   const createGlobe = (await import('cobe')).default
 
   const width = container.clientWidth || 600
@@ -149,13 +141,11 @@ onMounted(async () => {
     height: size * 2,
     phi,
     theta,
+    // alpha:false makes the canvas opaque. The globe's interior fragments output
+    // alpha 0, so with the default alpha:true the sphere composites transparently
+    // onto the page and the land dots disappear.
     context: { alpha: false, powerPreference: 'high-performance' } as WebGLContextAttributes,
 
-    // World map texture is injected externally via requestAnimationFrame below
-    // (bypasses Cobe's embedded base64 which fails in AMD/ANGLE on Windows).
-    // dark:1  = dark ocean, bright land dots
-    // mapBaseBrightness:0 = maximum land/ocean contrast
-    // mapBrightness:8 = land dots clearly visible
     dark: 1,
     diffuse: 1.2,
     mapSamples: 16000,
@@ -177,40 +167,12 @@ onMounted(async () => {
       }
       state.phi = phi
       state.theta = theta
+      // Fade the canvas in once Cobe has produced its first frame.
+      if (!globeReady.value) globeReady.value = true
     },
   } as Parameters<typeof createGlobe>[1])
 
-  // Inject external world map texture to replace Cobe's embedded data: URI.
-  // This works around a browser issue where the embedded base64 PNG
-  // fails to load via Image() in some environments (AMD/ANGLE on Windows).
-  // We wait one frame for Cobe to bind its WebGL context, then override
-  // the texture binding on unit 0 with our hosted PNG.
-  requestAnimationFrame(() => {
-    const gl =
-      canvas.getContext('webgl') || (canvas.getContext('webgl2') as WebGLRenderingContext | null)
-    if (!gl) return
-
-    const tex = gl.createTexture()
-    const img = new Image()
-    img.onload = () => {
-      gl.bindTexture(gl.TEXTURE_2D, tex)
-      gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, img)
-      gl.generateMipmap(gl.TEXTURE_2D)
-      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST)
-      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST)
-      gl.activeTexture(gl.TEXTURE0)
-      gl.bindTexture(gl.TEXTURE_2D, tex)
-      // Fade in once texture is bound and landmasses are visible
-      globeReady.value = true
-    }
-    img.onerror = () => {
-      // Avoid keeping canvas invisible if texture file fails to load
-      globeReady.value = true
-    }
-    img.src = '/world-map.png'
-  })
-
-  // Fallback: always show globe even if external texture handshake fails
+  // Fallback: reveal the globe even if onRender never fires (e.g. tab throttling).
   readyFallbackTimeout = setTimeout(() => {
     globeReady.value = true
   }, 1200)
