@@ -87,7 +87,7 @@
     </div>
 
     <div
-      class="pointer-events-none absolute top-0 right-0 hidden h-full w-1/2 items-center justify-center overflow-hidden opacity-70 md:flex"
+      class="pointer-events-none absolute top-0 right-0 hidden h-full w-1/2 items-center justify-center overflow-hidden md:flex"
     >
       <ClientOnly>
         <CobeGlobe />

@@ -141,10 +141,11 @@ onMounted(async () => {
     height: size * 2,
     phi,
     theta,
-    // alpha:false makes the canvas opaque. The globe's interior fragments output
-    // alpha 0, so with the default alpha:true the sphere composites transparently
-    // onto the page and the land dots disappear.
-    context: { alpha: false, powerPreference: 'high-performance' } as WebGLContextAttributes,
+    // Keep Cobe's default alpha:true so the canvas stays transparent outside the
+    // sphere — the globe reads as a clean round orb on the page instead of an
+    // opaque square. The sphere body itself renders opaque (opacity defaults to 1),
+    // so land dots stay crisp even over a light background.
+    context: { powerPreference: 'high-performance' } as WebGLContextAttributes,
 
     dark: 1,
     diffuse: 1.2,
@@ -207,6 +208,9 @@ onBeforeUnmount(() => {
   cursor: grab;
   touch-action: none;
   user-select: none;
+  /* Parent hero wrapper sets pointer-events:none; re-enable here so dragging
+     the globe works without the wrapper swallowing clicks elsewhere. */
+  pointer-events: auto;
 }
 
 .cobe-container:active {
